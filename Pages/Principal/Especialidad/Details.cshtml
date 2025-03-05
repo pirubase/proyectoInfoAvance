@@ -1,0 +1,49 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Especialidad.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Detalles</h1>
+
+<div>
+    <h4 style="margin-bottom: 20px;" class="text-xl font-medium">Vehiculo</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t010_vehiculo.f010_ts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t010_vehiculo.f010_ts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t010_vehiculo.f010_id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t010_vehiculo.f010_id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t010_vehiculo.f010_nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t010_vehiculo.f010_nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t010_vehiculo.f010_descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t010_vehiculo.f010_descripcion)
+        </dd>
+         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t010_vehiculo.vObjEmpresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t010_vehiculo.vObjEmpresa.f002_razon_social)
+        </dd> 
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.t010_vehiculo.f010_rowid">Editar</a> |
+    <a asp-page="./Index">Regresar</a>
+</div>

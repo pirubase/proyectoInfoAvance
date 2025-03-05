@@ -1,0 +1,84 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Permisos.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Editar</h1>
+
+<h4 style="margin-bottom: 20px;" class="text-xl font-medium">Permisos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="t003_permisos.f003_rowid" />
+            
+            <div class="form-group">
+                <label asp-for="t003_permisos.f003_id" class="control-label"></label>
+                <input asp-for="t003_permisos.f003_id" class="form-control" />
+                <span asp-validation-for="t003_permisos.f003_id" class="text-danger"></span>
+            </div>
+
+            <input type="hidden" asp-for="t003_permisos.f003_permiso_consultar" />
+            <input type="hidden" asp-for="t003_permisos.f003_permiso_crear" />
+            <input type="hidden" asp-for="t003_permisos.f003_permiso_editar" />
+            <input type="hidden" asp-for="t003_permisos.f003_permiso_detalle" />
+            <input type="hidden" asp-for="t003_permisos.f003_permiso_eliminar" />
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="t003_permisos.f003_permiso_uso_menu" id="permiso_menu" /> @Html.DisplayNameFor(model => model.t003_permisos.f003_permiso_uso_menu)
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="t003_permisos.f003_rowid_empresa_o_persona_natural" class="control-label"></label>
+                <select asp-for="t003_permisos.f003_rowid_empresa_o_persona_natural" class="form-control" asp-items="ViewBag.f003_rowid_empresa_o_persona_natural"></select>
+                <span asp-validation-for="t003_permisos.f003_rowid_empresa_o_persona_natural" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t003_permisos.f003_rowid_menu" class="control-label"></label>
+                <select asp-for="t003_permisos.f003_rowid_menu" class="form-control" asp-items="ViewBag.f003_rowid_menu"></select>
+                <span asp-validation-for="t003_permisos.f003_rowid_menu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t003_permisos.f003_rowid_perfil" class="control-label"></label>
+                <select asp-for="t003_permisos.f003_rowid_perfil" class="form-control" asp-items="ViewBag.f003_rowid_perfil"></select>
+                <span asp-validation-for="t003_permisos.f003_rowid_perfil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Editar" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        // Set initial values on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuCheckbox = document.getElementById('permiso_menu');
+            var isChecked = menuCheckbox.checked;
+            updateHiddenFields(isChecked);
+        });
+
+        document.getElementById('permiso_menu').addEventListener('change', function() {
+            updateHiddenFields(this.checked);
+        });
+
+        function updateHiddenFields(isChecked) {
+            document.querySelector('[name="t003_permisos.f003_permiso_consultar"]').value = isChecked;
+            document.querySelector('[name="t003_permisos.f003_permiso_crear"]').value = isChecked;
+            document.querySelector('[name="t003_permisos.f003_permiso_editar"]').value = isChecked;
+            document.querySelector('[name="t003_permisos.f003_permiso_detalle"]').value = isChecked;
+            document.querySelector('[name="t003_permisos.f003_permiso_eliminar"]').value = isChecked;
+        }
+    </script>
+}

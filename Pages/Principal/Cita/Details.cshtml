@@ -1,0 +1,67 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Cita.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Detalles</h1>
+
+<div>
+    <h4 style="margin-bottom: 20px;" class="text-xl font-medium">Cita</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.f009_ts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.f009_ts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.f009_hora)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.f009_hora)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjServicio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjServicio.f014_nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjEspecialidad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjEspecialidad.f010_nombre)
+        </dd>
+@*         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.f009_observacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.f009_observacion)
+        </dd> *@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjMecanico)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjMecanico.f006_apellido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjEmpresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjEmpresa.f002_alcance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjCliente)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjCliente.f007_apellido)
+        </dd>
+    </dl>
+</div>
+<div>
+    @* <a asp-page="./Edit" asp-route-id="@Model.t009_cita.f009_rowid">Editar</a> | *@
+    <a asp-page="./Index">Regresar</a>
+</div>

@@ -1,0 +1,94 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Cliente.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Eliminar</h1>
+
+<h3 style="margin-bottom: 20px;" class="text-2xl font-semibold">¿Esta seguro de eliminar este registro?</h3>
+<div>
+    <h4 style="margin-bottom: 20px;" class="text-xl font-medium">Cliente</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_ts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_ts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_apellido)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_apellido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_correo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_correo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_telefono)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_telefono)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_direccion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_direccion)
+        </dd>
+@*         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_marca)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_marca)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_modelo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_modelo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_año)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_año)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.f007_placa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.f007_placa)
+        </dd> *@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.vObjMecanicoFamilia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.vObjMecanicoFamilia.f006_apellido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t007_cliente.vObjEmpresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t007_cliente.vObjEmpresa.f002_alcance)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="t007_cliente.f007_rowid" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-page="./Index">Regresar</a>
+    </form>
+</div>

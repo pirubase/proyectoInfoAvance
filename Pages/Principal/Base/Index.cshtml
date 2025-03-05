@@ -1,0 +1,47 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a</h1>
+    <h1 class="text-3xl font-bold underline">
+      Mecanico plus
+    </h1>
+    <div id="alert-container" class="fixed top-5 right-5 hidden">
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <strong class="font-bold">Error:</strong>
+            <span class="block sm:inline" id="alert-message"></span>
+            <span id="close-alert" class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer text-red-700">
+                &times;
+            </span>
+        </div>
+    </div>
+    
+
+    <p>Todo lo que tu automovil necesita</p>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const alertMessage = '@TempData["ErrorMessage"]'; // Obtén el mensaje desde el TempData
+        if (alertMessage) {
+            const alertContainer = document.getElementById("alert-container");
+            const alertText = document.getElementById("alert-message");
+            const closeAlert = document.getElementById("close-alert");
+
+            alertText.textContent = alertMessage;
+            alertContainer.classList.remove("hidden");
+
+            // Ocultar la alerta al dar clic en cerrar
+            closeAlert.addEventListener("click", function () {
+                alertContainer.classList.add("hidden");
+            });
+
+            // Opcional: Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                alertContainer.classList.add("hidden");
+            }, 5000);
+        }
+    });
+</script>

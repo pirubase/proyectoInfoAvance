@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mecanico_plus Dashboard</title>
+   
+
+    <!-- jQuery -->
+    <script src="~/FrameworkInterno/JQuery/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="~/FrameworkInterno/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <script src="~/FrameworkInterno/bootstrap/bootstrap.bundle.min.js"></script>
+    
+    <!-- Bootbox -->
+    <script src="~/FrameworkInterno/bootBox/bootbox.min.js"></script>
+    <script src="~/FrameworkInterno/bootBox/bootbox.locales.min.js"></script>
+    <script src="~/FrameworkInterno/bootBox/bootbox.all.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="~/FrameworkInterno/vendors/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/FrameworkInterno/vendors/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/FrameworkInterno/vendors/fixedHeader.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/FrameworkInterno/vendors/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/FrameworkInterno/vendors/scroller.bootstrap4.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/FrameworkInterno/font-awesome/css/all.min.css">
+    
+    <style>
+        /* Estilos personalizados para DataTables */
+        .dataTables_wrapper {
+            padding: 20px 0;
+        }
+
+        .dataTables_filter {
+            float: right;
+            margin-bottom: 20px;
+        }
+
+        .dataTables_filter input {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 6px 12px;
+            margin-left: 8px;
+        }
+
+        .dt-buttons {
+            float: left;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .dt-buttons .btn {
+                background-color: #f97316 !important;
+                border-color: #f97316 !important;
+            color: white !f97316;
+            border-radius: 4px;
+            padding: 6px 12px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .dt-buttons .btn:hover {
+                    background-color: #ea580c !important;
+                    border-color: #ea580c !important;
+        }
+
+        .dataTables_info {
+            float: left;
+            padding: 15px 0;
+        }
+
+        .dataTables_paginate {
+            float: right;
+            margin: 15px 0;
+        }
+
+        .dataTables_paginate .paginate_button {
+          
+            cursor: pointer;
+                background-color: #f97316;
+                color: #f97316;
+            transition: all 0.2s;
+           
+        }
+
+        .dataTables_paginate .paginate_button:focus {
+            outline: none; /* Ensure no outline on focus */
+            box-shadow: none; /* Ensure no box shadow on focus */
+        }
+
+        .dataTables_paginate .paginate_button.current {
+                    background-color: #f97316;
+            color: white !important;
+            border-color: #3b82f6;
+        }
+
+        .dataTables_paginate .paginate_button:hover {
+                    background-color: #f97316;
+            color: white !important;
+        }
+
+        .table-responsive {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .dropdown-orange {
+            background-color: #f97316; /* Orange background */
+            color: white; /* White text */
+            
+        }
+        .dropdown-orange a {
+            color: white; /* White text for links */
+        }
+        .dropdown-orange a:hover {
+            background-color: #ea580c; /* Darker orange on hover */
+        }
+
+        /* Auditoria Styling */
+        .auditoria {
+            pointer-events: auto;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        /* Container Positioning */
+        .absolute {
+            position: absolute;
+        }
+
+        .day-column {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body class="h-full bg-white">
+    @{
+        var suspensionMessage = Context.Session.GetString("SuspensionMessage");
+    }
+    @if (!string.IsNullOrEmpty(suspensionMessage))
+    {
+        <div class="fixed top-0 left-0 right-0 z-50 bg-yellow-100 border-b border-yellow-200">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5 text-yellow-700 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-9v4a1 1 0 11-2 0V9a1 1 0 112 0zm0-4a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-yellow-700 text-sm font-medium">
+                            @suspensionMessage
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-12"></div> <!-- Espaciador para compensar el banner fijo -->
+    }
+
+    <div class="min-h-full">
+        <nav class="bg-orange-500">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="shrink-0">
+                            
+                        </div>
+                        <div class="hidden md:block">
+                            <div class="ml-10 flex items-baseline space-x-4">
+                               @*  <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Dashboard</a> *@
+                        @*         <a href="/Principal/Doctor" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Doctor</a>
+                                <a href="/Principal/Cita" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Cita</a>
+                                <a href="/Principal/Paciente" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Paciente</a> *@
+                                <a href="/Principal/Calendario" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Calendario de citas</a>
+                                
+                                <button id="medicinaButton" class="text-white hover:bg-orange-600 px-3 py-2 rounded-md text-sm font-medium">
+                                   Taller
+                                </button>
+                                <button id="reportsButton" class="text-white hover:bg-orange-600 px-3 py-2 rounded-md text-sm font-medium">
+                                    Seguridad
+                                </button>
+                               
+                            </div>
+                            <div class="relative">
+
+                                <div id="reportsDropdown" class="hidden absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 dropdown-white bg-white shadow-lg rounded-md z-50">
+                                    <div class="relative group">
+                                        <button id="seguridadButton" class="block w-full text-left px-4 py-2 text-sm bg-white text-gray-700 hover:bg-white-600">Asignacion de acceso paso a paso</button>
+                                        <div id="seguridadDropdown" class="hidden absolute left-full top-0 ml-2 w-48 bg-white dropdown-white bg-white shadow-lg rounded-md">
+                                            <a href="/Principal/Perfil" class="block px-4 py-2 text-sm text-gray-700 bg-white hover:bg-white-600">Paso 1.Perfil</a>
+                                            <a href="/Principal/Permisos" class="block px-4 py-2 text-sm text-gray-700 bg-white hover:bg-white-600">Paso 2.Permisos</a>
+                                            <a href="/Principal/Usuario" class="block px-4 py-2 text-sm text-gray-700 bg-white hover:bg-white-600">Paso 3.Usuario</a>
+
+                                      
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="relative  ml-3">
+                                <div id="medicinaDropdown" class="hidden absolute left-0 mt-2 w-48 bg-white dropdown-white-900 shadow-lg rounded-md z-50" style="top: 100%; transform: translateX(-30%);">
+                                    <div class="relative group">
+                  
+                                        <a href="/Principal/Servicio" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Servicio</a>
+                                        <a href="/Principal/Especialidad" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Vehiculo</a>
+                                        <a href="/Principal/Mecanico" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Mecanico</a>
+                                        <a href="/Principal/Cliente" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Cliente</a>
+                                        <a href="/Principal/Cita" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Citas</a>
+                                  
+                        
+
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-4 flex items-center md:ml-6">
+                            @* <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                <span class="sr-only">View notifications</span>
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                                </svg>
+                            </button> *@
+
+                            <!-- Profile dropdown -->
+                            <div class="relative ml-3">
+                                <div>
+                                    <button id="user-menu-button" type="button" class="relative flex max-w-xs items-center rounded-full bg-orange-500 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-500">
+                                        <svg class="h-8 w-8 text-white p-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <i class="fa fa-car text-white p-1"></i>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div id="user-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700">Seguridad</a>
+                                   
+                                    <form method="post" asp-page="/Login/Index" asp-page-handler="Logout" class="inline">
+                                        <button type="submit" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                            <i class="fa fa-sign-out"></i> Cerrar sesión
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="-mr-2 flex md:hidden">
+                        <!-- Mobile menu button -->
+                        <button id="mobile-menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md bg-orange-500 p-2 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-500">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                    <a href="#" class="block rounded-md bg-orange-500 px-3 py-2 text-base font-medium text-white">Dashboard</a>
+                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-orange-600 hover:text-white">Team</a>
+                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-orange-600 hover:text-white">Projects</a>
+                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-orange-600 hover:text-white">Calendar</a>
+                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-orange-600 hover:text-white">Reports</a>
+                </div>
+            </div>
+        </nav>
+
+        
+        <main>
+            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const userMenuButton = document.getElementById('user-menu-button');
+            const userMenu = document.getElementById('user-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Toggle the profile menu
+            userMenuButton.addEventListener('click', function (event) {
+                event.stopPropagation();
+                userMenu.classList.toggle('hidden');
+            });
+
+            // Toggle the mobile menu
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close menus when clicking outside
+            document.addEventListener('click', function (event) {
+                if (!userMenuButton.contains(event.target) && !userMenu.contains(event.target)) {
+                    userMenu.classList.add('hidden');
+                }
+                if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const medicinaButton = document.getElementById("medicinaButton");
+        const medicinaDropdown = document.getElementById("medicinaDropdown");
+
+        reportsButton.addEventListener("click", () => {
+            // Toggle visibility of the dropdown
+            const isHidden = medicinaDropdown.classList.contains("hidden");
+            if (isHidden) {
+                medicinaDropdown.classList.remove("hidden");
+            } else {
+                medicinaDropdown.classList.add("hidden");
+            }
+        });
+
+        // Optionally close the menu if clicking outside
+        document.addEventListener("click", (e) => {
+            if (!medicinaButton.contains(e.target) && !medicinaDropdown.contains(e.target)) {
+                medicinaDropdown.classList.add("hidden");
+            }
+        });
+    </script>
+
+    <script>
+        const reportsButton = document.getElementById("reportsButton");
+        const reportsDropdown = document.getElementById("reportsDropdown");
+
+        reportsButton.addEventListener("click", () => {
+            // Toggle visibility of the dropdown
+            const isHidden = reportsDropdown.classList.contains("hidden");
+            if (isHidden) {
+                reportsDropdown.classList.remove("hidden");
+            } else {
+                reportsDropdown.classList.add("hidden");
+            }
+        });
+
+        // Optionally close the menu if clicking outside
+        document.addEventListener("click", (e) => {
+            if (!reportsButton.contains(e.target) && !reportsDropdown.contains(e.target)) {
+                reportsDropdown.classList.add("hidden");
+            }
+        });
+    </script>
+
+   <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const seguridadButton = document.getElementById('seguridadButton');
+            const seguridadDropdown = document.getElementById('seguridadDropdown');
+
+            seguridadButton.addEventListener('click', function (event) {
+                event.stopPropagation();
+                seguridadDropdown.classList.toggle('hidden');
+            });
+
+            // Cerrar el dropdown si se hace clic fuera
+            document.addEventListener('click', function (event) {
+                if (!seguridadButton.contains(event.target) && !seguridadDropdown.contains(event.target)) {
+                    seguridadDropdown.classList.add('hidden');
+                }
+            });
+        });
+   </script>
+   <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const medicinaButton = document.getElementById('medicinaButton');
+            const medicinaDropdown = document.getElementById('medicinaDropdown');
+
+            // Muestra u oculta el menú de Medicina General
+            medicinaButton.addEventListener('click', function (event) {
+                event.stopPropagation(); // Evita que el evento haga cerrar otros dropdowns
+                // Position the dropdown relative to the button
+                const buttonRect = medicinaButton.getBoundingClientRect();
+                medicinaDropdown.style.position = 'fixed';
+                medicinaDropdown.style.top = `${buttonRect.bottom}px`;
+                medicinaDropdown.style.left = `${buttonRect.left}px`;
+                medicinaDropdown.classList.toggle('hidden');
+            });
+
+            // Cierra el menú si se hace clic fuera de él
+            document.addEventListener('click', function (event) {
+                if (!medicinaButton.contains(event.target) && !medicinaDropdown.contains(event.target)) {
+                    medicinaDropdown.classList.add('hidden');
+                }
+            });
+        });
+   </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const token = '@Context.Session.GetString("JwtToken")';
+        console.log('JWT Token:', token); // Verificar el token en consola
+        if (token) {
+            $.ajaxSetup({
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('Authorization', 'Bearer ' + token);
+                }
+            });
+        }
+    });
+    </script>
+
+    <!-- Skycons -->
+    <script src="~/FrameworkInterno/vendors/skycons.js"></script>
+
+    <!-- Datatables -->
+    <script src="~/FrameworkInterno/vendors/jquery.dataTables.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/dataTables.bootstrap4.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/dataTables.buttons.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/buttons.bootstrap4.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/buttons.flash.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/buttons.html5.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/buttons.print.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/dataTables.fixedHeader.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/dataTables.keyTable.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/dataTables.responsive.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/responsive.bootstrap4.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/dataTables.scroller.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/jszip.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/pdfmake.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/vfs_fonts.js"></script>
+    <script src="~/FrameworkInterno/vendors/jspdf.umd.min.js"></script>
+    <script src="~/FrameworkInterno/vendors/html2canvas.min.js"></script>
+
+    <!-- Site.js - Add this line -->
+    <script src="~/js/main.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

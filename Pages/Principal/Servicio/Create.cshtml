@@ -1,0 +1,53 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Servicio.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Crear</h1>
+
+<h4 style="margin-bottom: 20px;" class="text-xl font-medium">Servicio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+@*             <div class="form-group">
+                <label asp-for="t014_servicio.f014_ts" class="control-label"></label>
+                <input asp-for="t014_servicio.f014_ts" class="form-control" />
+                <span asp-validation-for="t014_servicio.f014_ts" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="t014_servicio.f014_id" class="control-label"></label>
+                <input asp-for="t014_servicio.f014_id" class="form-control" />
+                <span asp-validation-for="t014_servicio.f014_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t014_servicio.f014_nombre" class="control-label"></label>
+                <input asp-for="t014_servicio.f014_nombre" class="form-control" />
+                <span asp-validation-for="t014_servicio.f014_nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t014_servicio.f014_valor" class="control-label"></label>
+                <input asp-for="t014_servicio.f014_valor" class="form-control" />
+                <span asp-validation-for="t014_servicio.f014_valor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t014_servicio.f014_rowid_empresa_o_persona_natural" class="control-label"></label>
+                <select asp-for="t014_servicio.f014_rowid_empresa_o_persona_natural" class ="form-control" asp-items="ViewBag.f014_rowid_empresa_o_persona_natural"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,132 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Cita.FinalizarModel
+
+@{
+    ViewData["Title"] = "Finalizar";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Finalizar</h1>
+
+<h3 style="margin-bottom: 20px;" class="text-2xl font-semibold">¿Esta seguro de finalizar esta cita?</h3>
+<div>
+    <h4 style="margin-bottom: 20px;" class="text-xl font-medium">Cita</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.f009_ts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.f009_ts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.f009_hora)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.f009_hora)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjServicio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjServicio.f014_nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjEspecialidad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjEspecialidad.f010_nombre)
+        </dd>
+@*         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.f009_observacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.f009_observacion)
+        </dd> *@
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjMecanico)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjMecanico.f006_apellido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjEmpresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjEmpresa.f002_alcance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t009_cita.vObjCliente)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t009_cita.vObjCliente.f007_apellido)
+        </dd>
+    </dl>
+    <div id="alert-container" class="fixed top-5 right-5 hidden">
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <strong class="font-bold">Error:</strong>
+            <span class="block sm:inline" id="alert-message"></span>
+            <span id="close-alert" class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer text-red-700">
+                &times;
+            </span>
+        </div>
+    </div>
+    <div id="success-alert-container" class="fixed top-5 right-5 hidden">
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+            <strong class="font-bold">Success:</strong>
+            <span class="block sm:inline" id="success-alert-message"></span>
+            <span id="close-success-alert" class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer text-green-700">
+                &times;
+            </span>
+        </div>
+    </div>
+
+    
+    <form method="post">
+        <input type="hidden" asp-for="t009_cita.f009_rowid" />
+        <input type="submit" value="Finalizar" class="btn btn-danger" /> |
+        <a asp-page="./Index">Regresar</a>
+    </form>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const alertMessage = '@TempData["ErrorMessage"]'; // Obtén el mensaje desde el TempData
+        if (alertMessage) {
+            const alertContainer = document.getElementById("alert-container");
+            const alertText = document.getElementById("alert-message");
+            const closeAlert = document.getElementById("close-alert");
+
+            alertText.textContent = alertMessage;
+            alertContainer.classList.remove("hidden");
+
+            // Ocultar la alerta al dar clic en cerrar
+            closeAlert.addEventListener("click", function () {
+                alertContainer.classList.add("hidden");
+            });
+
+            // Opcional: Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                alertContainer.classList.add("hidden");
+            }, 5000);
+        }
+
+        const successMessage = '@TempData["SuccessMessage"]'; // Obtén el mensaje desde el TempData
+        if (successMessage) {
+            const successAlertContainer = document.getElementById("success-alert-container");
+            const successAlertText = document.getElementById("success-alert-message");
+            const closeSuccessAlert = document.getElementById("close-success-alert");
+
+            successAlertText.textContent = successMessage;
+            successAlertContainer.classList.remove("hidden");
+
+            // Ocultar la alerta al dar clic en cerrar
+            closeSuccessAlert.addEventListener("click", function () {
+                successAlertContainer.classList.add("hidden");
+            });
+
+            // Opcional: Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                successAlertContainer.classList.add("hidden");
+            }, 5000);
+        }
+    });
+</script>

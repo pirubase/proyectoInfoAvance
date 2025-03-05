@@ -1,0 +1,868 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Calendario.IndexModel
+@{
+    ViewData["Title"] = "Calendario";
+}
+
+<div class="bg-white p-6 rounded-lg shadow mb-6">
+    <h1 class="text-xl font-bold mb-4">Calendario de citas</h1>
+
+    @if (HttpContext.Session.GetString("UserType") == "Cliente" && Model.CitasPendientes.Any())
+    {
+        <div class="mb-8">
+            <button class="w-full bg-orange-50 p-4 rounded-lg border border-blue-200 flex justify-between items-center" onclick="toggleSection('estadoCitas')">
+                <h2 class="text-xl font-bold text-blue-800">Estado de tus Citas</h2>
+                <svg class="w-6 h-6 text-blue-800 transform transition-transform" id="estadoCitas-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="estadoCitas-content" class="hidden bg-orange-50 p-6 border-l border-r border-b border-orange-200 rounded-b-lg">
+                <!-- Reemplazar los botones de filtro con un select -->
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-medium text-blue-800">Listado de Citas</h3>
+                    <div class="relative">
+                        <select id="filtro-estados" 
+                                class="appearance-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-8 text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                                onchange="filtrarCitas(this.value)">
+                            <option value="todos">Todas las citas</option>
+                            <option value="asignada">Asignada</option>
+                            <option value="en proceso">En proceso</option>
+                            <option value="diagnostico">Diagnostico</option>
+                    
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a 1 1 0 111.414 1.414l-4 4a 1 1 0 01-1.414 0l-4-4a 1 1 0 010-1.414z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <div class="max-h-[300px] overflow-y-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-orange-100">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider">Fecha</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider">Mecanico</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider">Vehiculo</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider">Servicio</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-blue-800 uppercase tracking-wider">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                @foreach (var cita in Model.CitasPendientes)
+                                {
+                                    <tr class="hover:bg-blue-50 fila-cita" data-estado="@cita.f009_estado">
+                                        <td class="px-6 py-4">@cita.f009_hora.ToString("dd/MM/yyyy HH:mm")</td>
+                                        <td class="px-6 py-4">Dr. @cita.vObjMecanico.f006_nombre @cita.vObjMecanico.f006_apellido</td>
+                                        <td class="px-6 py-4">@cita.vObjEspecialidad.f010_nombre</td>
+                                        <td class="px-6 py-4">@cita.vObjServicio.f014_nombre</td>
+                                        <td class="px-6 py-4">
+                                            @if (cita.f009_estado == "en proceso")
+                                            {
+                                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                                   En proceso
+                                                </span>
+                                            }
+                                            else if (cita.f009_estado == "diagnóstico")
+                                            {
+                                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                                                   En diagnóstico
+                                                </span>
+                                            }
+                                          
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+    @if (HttpContext.Session.GetString("UserType") == "Cliente")
+    {
+        <div class="mb-8">
+            <button class="w-full bg-orange-50 p-4 rounded-lg border border-green-200 flex justify-between items-center" 
+                    onclick="toggleSection('doctorFamilia')">
+                <h2 class="text-xl font-bold text-blue-800">Mecanico de Familia</h2>
+                <svg class="w-6 h-6 text-blue-800 transform transition-transform" id="doctorFamilia-arrow" fill="none" 
+                     stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="doctorFamilia-content" class="hidden bg-orange-50 p-6 border-l border-r border-b border-orange-200 rounded-b-lg">
+                <form method="post" asp-page-handler="AsignarDoctorFamilia">
+                    <div class="mb-4">
+                        <label for="doctorFamiliaId" class="block text-sm font-medium text-gray-700">Seleccione su Mecanico de Familia</label>
+                        <select id="doctorFamiliaId" name="doctorId" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 
+                                focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+                                asp-items="@(new SelectList(Model.Mecanicos, "f006_rowid", "NombreCompleto"))">
+                            <option value="">Seleccione un mecanico</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-end">
+                        <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                            Asignar Mecanico
+                        </button>
+                    </div>
+                </form>
+                @if (Model.MecanicoPreferido != null)
+                {
+                    <div class="mt-4 p-4 bg-white rounded-lg shadow">
+                        <h3 class="text-lg font-medium text-gray-900">Su Mecánico de Familia Actual</h3>
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-600">
+                                Mecánico: @Model.MecanicoPreferido.f006_nombre @Model.MecanicoPreferido.f006_apellido
+                            </p>
+                           
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+    @if (HttpContext.Session.GetString("UserType") != "Cliente")
+    {
+        <div class="mb-8">
+            <button class="w-full bg-yellow-50 p-4 rounded-lg border border-yellow-200 flex justify-between items-center" onclick="toggleSection('citasPendientes')">
+                <h2 class="text-xl font-bold text-yellow-800">Citas Pendientes de Aprobación</h2>
+                <svg class="w-6 h-6 text-yellow-800 transform transition-transform" id="citasPendientes-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="citasPendientes-content" class="hidden bg-yellow-50 p-6 border-l border-r border-b border-yellow-200 rounded-b-lg">
+                <div class="overflow-x-auto">
+                    <div class="max-h-[300px] overflow-y-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-yellow-100">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-yellow-800 uppercase tracking-wider">Fecha</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-yellow-800 uppercase tracking-wider">Cliente</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-yellow-800 uppercase tracking-wider">Servicio</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-yellow-800 uppercase tracking-wider">Mecanico</th> <!-- Asegúrate de que esta columna esté presente -->
+                        
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-yellow-800 uppercase tracking-wider">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                @* @foreach (var cita in Model.CitasPendientes)
+                                {
+                                    <tr class="hover:bg-yellow-50">
+                                        <td class="px-6 py-4 whitespace-nowrap">@cita.f009_hora.ToString("dd/MM/yyyy HH:mm")</td>
+                                        <td class="px-6 py-4">@cita.vObjCliente.f007_nombre @cita.vObjCliente.f007_apellido</td>
+                                        <td class="px-6 py-4">@cita.vObjServicio.f014_nombre</td>
+                                        <td class="px-6 py-4">@cita.vObjMecanico.f006_nombre @cita.vObjMecanico.f006_apellido</td> <!-- Mostrar el nombre del doctor -->
+                                     
+                                        <td class="px-6 py-4">
+                                            <div class="flex space-x-2">
+                                                <form method="post" asp-page-handler="AprobarCita" class="inline">
+                                                    <input type="hidden" name="citaId" value="@cita.f009_rowid" />
+                                                    <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
+                                                        Aprobar
+                                                    </button>
+                                                </form>
+                                                <form method="post" asp-page-handler="RechazarCita" class="inline">
+                                                    <input type="hidden" name="citaId" value="@cita.f009_rowid" />
+                                                    <button type="submit" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">
+                                                        No aprobar
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                } *@
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <!-- Controles de navegación -->
+    <div class="flex justify-between items-center mb-4 sticky top-0 bg-white z-10">
+        <button id="prev-week" class="px-4 py-2 bg-orange-200 text-gray-800 rounded hover:bg-gray-300">Semana anterior</button>
+        <h2 id="current-week" class="text-lg font-medium"></h2>
+        <button id="next-week" class="px-4 py-2 bg-orange-200 text-gray-800 rounded hover:bg-gray-300">Semana siguiente</button>
+    </div>
+
+  
+    <!-- Contenedor del calendario -->
+    <div class="grid grid-cols-8  border-t border-orange-200 text-sm">
+        <!-- Columna de horas -->
+        <div class="bg-gray-100 text-blue-800 font-semibold">
+            <div class="text-center py-2">Horas</div>
+            <div id="hours-column" class="grid grid-rows-24">
+                <!-- Aquí se generan dinámicamente las horas -->
+            </div>
+        </div>
+
+        <!-- Contenedor de días y bloques -->
+        <div class="col-span-7">
+            <!-- Encabezados de los días -->
+            <div class="grid grid-cols-7 sticky top-12 bg-orange z-10">
+                <div class="font-bold py-2 bg-orange-100 text-center" id="day-header-0">Lunes</div>
+                <div class="font-bold py-2 bg-orange-100 text-center" id="day-header-1">Martes</div>
+                <div class="font-bold py-2 bg-orange-100 text-center" id="day-header-2">Miércoles</div>
+                <div class="font-bold py-2 bg-orange-100 text-center" id="day-header-3">Jueves</div>
+                <div class="font-bold py-2 bg-orange-100 text-center" id="day-header-4">Viernes</div>
+                <div class="font-bold py-2 bg-orange-100 text-center" id="day-header-5">Sábado</div>
+                <div class="font-bold py-2 bg-orange-100 text-center" id="day-header-6">Domingo</div>
+            </div>
+
+            <!-- Filas de horarios -->
+            <div id="week-grid" class="grid grid-cols-7">
+                <!-- Aquí se generarán dinámicamente las celdas de horarios -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="citaModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-20">
+    <div class="bg-orange-50 p-6 rounded-lg shadow-lg w-1/2">
+        <h2 class="text-xl text-blue-800 font-bold mb-4">Detalles de la Cita</h2>
+        <div id="citaDetails" class="text-blue-800">
+            <!-- Aquí se mostrarán los detalles de la cita -->
+        </div>
+        <div class="mt-4 flex justify-end space-x-2">
+            <button id="openUpdateStatusModalButton" class="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600">Actualizar Estado</button>
+            <button id="closeModal" class="px-4 py-2 bg-blue-900 text-white rounded hover:bg-blue-600">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para crear una nueva cita -->
+<div id="createCitaModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-20">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg max-h-[90vh] overflow-y-auto m-4">
+        <h2 class="text-xl font-bold mb-4">Crear Nueva Cita</h2>
+        <form method="post" asp-page-handler="CreateCita" id="createCitaForm">
+            <input type="hidden" id="newCitaHora" name="f009_hora" />
+            <div class="mb-4">
+                <label for="newCitaObservacion" class="block text-sm font-medium text-gray-700">Observación</label>
+                <textarea id="newCitaObservacion" name="f009_observacion" rows="5" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="newCitaTipo" class="block text-sm font-medium text-gray-700">Servicio</label>
+                <select id="newCitaTipo" name="f009_tipo_cita" class="form-control" asp-items="ViewBag.f009_rowid_servicio"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_servicio" class="text-danger hidden"></span>
+            </div>
+            <div class="mb-4">
+                <label for="newCitaEspecialidad" class="block text-sm font-medium text-gray-700">Vehiculo</label>
+                <span class="text-danger hidden">* Este campo es requerido</span>
+                <select id="newCitaEspecialidad" name="especialidadId" class="form-control" asp-items="ViewBag.f009_rowid_especialidad"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_especialidad" class="text-danger hidden"></span>
+            </div>
+            <div class="mb-4">
+                <label for="newCitaMecanico" class="block text-sm font-medium text-gray-700">Mecánico</label>
+                <span class="text-danger hidden">* Este campo es requerido</span>
+                <select id="newCitaMecanico" name="doctorId" class="form-control" asp-items="ViewBag.f009_rowid_doctor"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_mecanico" class="text-danger hidden"></span>
+            </div>
+            <div class="mb-4">
+                <label for="newCitaEmpresa" class="block text-sm font-medium text-gray-700">Empresa</label>
+                <span class="text-danger hidden">* Este campo es requerido</span>
+                <select id="newCitaEmpresa" name="empresaId" class="form-control" asp-items="ViewBag.f009_rowid_empresa_o_persona_natural"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_empresa_o_persona_natural" class="text-danger hidden"></span>
+            </div>
+            <div class="mb-4">
+                <label for="newCitaCliente" class="block text-sm font-medium text-gray-700">Cliente</label>
+                <span class="text-danger hidden">* Este campo es requerido</span>
+                <select id="newCitaCliente" name="pacienteId" class="form-control" asp-items="ViewBag.f009_rowid_paciente"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_cliente" class="text-danger hidden"></span>
+            </div>
+            <div class="mb-4">
+                <!-- Etiqueta para el total a pagar -->
+                <label for="serviceCost" class="block text-sm font-medium text-gray-700">Total a pagar</label>
+                <input id="serviceCost" type="text" class="block w-full rounded-md bg-gray-100 px-3 py-1.5 text-base text-gray-900" readonly />
+            </div>
+            <button type="submit" id="submitCreateCita" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                <span>Crear</span>
+                <span class="hidden">
+                    <i class="fas fa-spinner fa-spin"></i> Procesando...
+                </span>
+            </button>
+            <button type="button" id="closeCreateModal" class="mt-4 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">Cancelar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal para actualizar el estado -->
+<div id="updateStatusModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-20">
+    <div class="bg-orange-50 p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-xl text-blue-800 font-bold mb-4">Actualizar Estado de la Cita</h2>
+        <form id="updateStatusForm">
+            <input type="hidden" id="updateCitaId" name="citaId" />
+            <div class="mb-4">
+                <label for="newStatus" class="block text-sm font-medium text-blue-700">Nuevo Estado</label>
+                <select id="newStatus" name="newStatus" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                    <option value="diagnóstico">Diagnóstico</option>
+                    <option value="en proceso">En Proceso</option>
+                    <option value="finalizada">Finalizada</option>
+                </select>
+            </div>
+            <div class="mt-4 flex justify-end space-x-2">
+                <button type="submit" class="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600">Actualizar</button>
+                <button type="button" id="closeUpdateStatusModalButton" class="px-4 py-2 bg-blue-900 text-white rounded hover:bg-gray-600">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="alert-container" class="fixed top-5 right-5 hidden">
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+        <strong class="font-bold">Error:</strong>
+        <span class="block sm:inline" id="alert-message"></span>
+        <span id="close-alert" class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer text-red-700">
+            &times;
+        </span>
+    </div>
+</div>
+<div id="success-alert-container" class="fixed top-5 right-5 hidden">
+    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+        <strong class="font-bold">Exito:</strong>
+        <span class="block sm:inline" id="success-alert-message"></span>
+        <span id="close-success-alert" class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer text-green-700">
+            &times;
+        </span>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const alertMessage = '@TempData["ErrorMessage"]'; // Obtén el mensaje desde el TempData
+        if (alertMessage) {
+            const alertContainer = document.getElementById("alert-container");
+            const alertText = document.getElementById("alert-message");
+            const closeAlert = document.getElementById("close-alert");
+
+            alertText.textContent = alertMessage;
+            alertContainer.classList.remove("hidden");
+
+            // Ocultar la alerta al dar clic en cerrar
+            closeAlert.addEventListener("click", function () {
+                alertContainer.classList.add("hidden");
+            });
+
+            // Opcional: Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                alertContainer.classList.add("hidden");
+            }, 5000);
+        }
+
+        const successMessage = '@TempData["SuccessMessage"]'; // Obtén el mensaje desde el TempData
+        if (successMessage) {
+            const successAlertContainer = document.getElementById("success-alert-container");
+            const successAlertText = document.getElementById("success-alert-message");
+            const closeSuccessAlert = document.getElementById("close-success-alert");
+
+            successAlertText.textContent = successMessage;
+            successAlertContainer.classList.remove("hidden");
+
+            // Ocultar la alerta al dar clic en cerrar
+            closeSuccessAlert.addEventListener("click", function () {
+                successAlertContainer.classList.add("hidden");
+            });
+
+            // Opcional: Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                successAlertContainer.classList.add("hidden");
+            }, 5000);
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const weekGrid = document.getElementById('week-grid');
+        const hoursColumn = document.getElementById('hours-column');
+        const currentWeekLabel = document.getElementById('current-week');
+        const prevWeekBtn = document.getElementById('prev-week');
+        const nextWeekBtn = document.getElementById('next-week');
+
+        let currentDate = new Date();
+        const citas = @Html.Raw(Json.Serialize(Model.Citas.Select(c => new {
+            c.f009_rowid,
+            c.f009_hora,
+            c.f009_descripcion,
+            TipoCita = c.vObjServicio.f014_nombre,
+            MecanicoNombre = c.vObjMecanico.f006_nombre,
+            MecanicoApellido = c.vObjMecanico.f006_apellido,
+            ClienteId = c.f009_rowid_cliente // Cambiado para usar el ID directamente
+        })));
+
+        console.log(citas); // Add this line to log the citas array
+
+        const currentClientId = @Json.Serialize(Model.CurrentClientId);
+        const userType = '@HttpContext.Session.GetString("UserType")';
+
+        // Renderiza las horas en la columna de la izquierda
+        function renderHours() {
+            hoursColumn.innerHTML = '';
+            for (let hour = 0; hour < 24; hour++) {
+                for (let half = 0; half < 2; half++) {
+                    const hourDiv = document.createElement('div');
+                    hourDiv.className = 'py-2 border-b border-gray-300 h-12 flex items-center justify-center';
+                    hourDiv.textContent = `${hour}:${half === 0 ? '00' : '30'}`;
+                    hoursColumn.appendChild(hourDiv);
+                }
+            }
+        }
+
+        // Renderiza la vista semanal con horas
+        function renderWeek(date) {
+            weekGrid.innerHTML = ''; // Limpia la semana anterior
+            const startOfWeek = getMonday(date);
+            const endOfWeek = new Date(startOfWeek);
+            endOfWeek.setDate(endOfWeek.getDate() + 6);
+
+            // Actualiza los encabezados de los días
+            for (let i = 0; i < 7; i++) {
+                const dayHeader = document.getElementById(`day-header-${i}`);
+                const day = new Date(startOfWeek);
+                day.setDate(startOfWeek.getDate() + i);
+                dayHeader.textContent = `${day.toLocaleDateString('es-ES', { weekday: 'long' })} ${day.getDate()}/${day.getMonth() + 1}`;
+                dayHeader.className = `font-bold py-2 text-center ${isToday(day) ? 'bg-blue-200' : 'bg-gray-100'}`;
+            }
+
+            // Genera las 24 horas para cada día
+            for (let hour = 0; hour < 24; hour++) {
+                for (let half = 0; half < 2; half++) {
+                    for (let day = 0; day < 7; day++) {
+                        const timeSlot = document.createElement('div');
+                        timeSlot.className = 'border p-2 h-12 bg-gray-50 hover:bg-gray-100 relative';
+                        timeSlot.dataset.day = day;
+                        timeSlot.dataset.hour = hour;
+                        timeSlot.dataset.half = half;
+                        timeSlot.textContent = ''; // Inicialmente vacío (para citas futuras)
+
+                        // Contenedor para citas
+                        const appointmentContainer = document.createElement('div');
+                        appointmentContainer.className = 'absolute inset-0 p-1';
+                        timeSlot.appendChild(appointmentContainer);
+
+                        weekGrid.appendChild(timeSlot);
+                    }
+                }
+            }
+
+            // Mostrar citas en el calendario
+            citas.forEach(cita => {
+                const citaDate = new Date(cita.f009_hora);
+                // const localDate = new Date(citaDate.getTime() - (citaDate.getTimezoneOffset() * 60000)); // Adjust for timezone offset
+
+                // Verificar si la cita está dentro de la semana actual
+                if (citaDate >= startOfWeek && citaDate <= endOfWeek) {
+                    const dayIndex = (citaDate.getDay() + 6) % 7; // Ajustar para que Lunes sea 0
+                    const hourIndex = citaDate.getHours();
+                    const halfIndex = citaDate.getMinutes() >= 30 ? 1 : 0;
+                    const timeSlot = weekGrid.querySelector(`[data-day="${dayIndex}"][data-hour="${hourIndex}"][data-half="${halfIndex}"] .absolute`);
+
+                    if (timeSlot) {
+                        const citaDiv = document.createElement('div');
+                        const isClientsCita = userType === 'Client' && currentClientId === cita.ClienteId;
+
+                        if (userType === 'Client' && !isClientsCita) {
+                            // Citas que no pertenecen al cliente
+                            citaDiv.className = 'cita bg-red-500 text-white p-1 rounded';
+                            citaDiv.textContent = 'Horario ocupado';
+                        } else {
+                            // Citas del cliente o vista de staff
+                            citaDiv.className = 'cita bg-orange-500 text-white p-1 rounded cursor-pointer';
+                            citaDiv.dataset.id = cita.f009_rowid;
+                            citaDiv.textContent = `${cita.tipoCita} - ${cita.mecanicoNombre} ${cita.mecanicoApellido}`;
+                        }
+
+                        timeSlot.appendChild(citaDiv);
+                    }
+                }
+            });
+
+            // Actualiza el título de la semana
+            currentWeekLabel.textContent = `${formatDate(startOfWeek)} - ${formatDate(endOfWeek)}`;
+        }
+
+        function getMonday(date) {
+            const day = date.getDay();
+            const diff = date.getDate() - day + (day === 0 ? -6 : 1);
+            return new Date(date.setDate(diff));
+        }
+
+        function formatDate(date) {
+            return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+        }
+
+        function isToday(date) {
+            const today = new Date();
+            return date.getDate() === today.getDate() &&
+                   date.getMonth() === today.getMonth() &&
+                   date.getFullYear() === today.getFullYear();
+        }
+
+        // Navegación entre semanas
+        prevWeekBtn.addEventListener('click', () => {
+            currentDate.setDate(currentDate.getDate() - 7);
+            renderWeek(currentDate);
+        });
+
+        nextWeekBtn.addEventListener('click', () => {
+            currentDate.setDate(currentDate.getDate() + 7);
+            renderWeek(currentDate);
+        });
+
+        // Render inicial
+        renderHours();
+        renderWeek(currentDate);
+
+        // Mostrar detalles de la cita en un modal
+        function showCitaDetails(cita) {
+            const citaDetails = document.getElementById('citaDetails');
+            console.log("Mostrando detalles de cita:", cita);
+            
+            citaDetails.innerHTML = `
+                <p><strong>Hora:</strong> ${new Date(cita.f009_hora).toLocaleString()}</p>
+                <p><strong>Observación:</strong> ${cita.f009_descripcion || ''}</p>
+                <p><strong>Mecanico:</strong> ${cita.vObjMecanico.f006_nombre} ${cita.vObjMecanico.f006_apellido}</p>
+                <p><strong>Cliente:</strong> ${cita.vObjCliente.f007_nombre} ${cita.vObjCliente.f007_apellido}</p>
+                <p><strong>Vehiculo:</strong> ${cita.vObjEspecialidad.f010_nombre}</p>
+                <p><strong>Estado:</strong> ${cita.f009_estado}</p>
+                ${(cita.f009_rowid_servicio === 2 && cita.canJoinMeeting) ? `
+                    <div class="mt-4">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                            <h3 class="font-semibold text-lg mb-2">Acceso a la Sala Virtual</h3>
+                            ${cita.token ? `
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <p class="font-medium">Token de acceso:</p>
+                                    <code class="bg-gray-100 px-2 py-1 rounded select-all">${cita.token}</code>
+                                    <button onclick="copiarToken('${cita.token}')" 
+                                            class="p-1 text-blue-600 hover:text-blue-800">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <a href="/Principal/CitaVirtual/Index" 
+                                   class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+                                    <i class="fas fa-video mr-2"></i>Ir a Sala Virtual
+                                </a>
+                            ` : '<p class="text-yellow-600">El token aún no está disponible</p>'}
+                        </div>
+                    </div>
+                ` : ''}
+            `;
+            
+            document.getElementById('citaModal').classList.remove('hidden');
+
+            // Set the citaId in the update status form
+            document.getElementById('updateCitaId').value = cita.f009_rowid;
+        }
+
+        // Open the update status modal
+        document.getElementById('openUpdateStatusModalButton').addEventListener('click', () => {
+            document.getElementById('updateStatusModal').classList.remove('hidden');
+        });
+
+        // Close the update status modal
+        document.getElementById('closeUpdateStatusModalButton').addEventListener('click', () => {
+            document.getElementById('updateStatusModal').classList.add('hidden');
+        });
+
+        // Handle the update status form submission
+        document.getElementById('updateStatusForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const citaId = document.getElementById('updateCitaId').value;
+            const newStatus = document.getElementById('newStatus').value;
+
+            console.log("Updating cita status:", { citaId, newStatus });
+
+            $.ajax({
+                url: '/Principal/Calendario/Index?handler=UpdateCitaStatus',
+                method: 'POST',
+                data: { citaId: citaId, newStatus: newStatus },
+                success: function(result) {
+                    console.log("Cita status updated successfully:", result);
+                    const successAlertContainer = document.getElementById("success-alert-container");
+                    const successAlertText = document.getElementById("success-alert-message");
+
+                    successAlertText.textContent = "Estado de la cita actualizado correctamente.";
+                    successAlertContainer.classList.remove("hidden");
+
+                    // Ocultar la alerta al dar clic en cerrar
+                    document.getElementById("close-success-alert").addEventListener("click", function () {
+                        successAlertContainer.classList.add("hidden");
+                    });
+
+                    // Opcional: Ocultar automáticamente después de 5 segundos
+                    setTimeout(() => {
+                        successAlertContainer.classList.add("hidden");
+                    }, 5000);
+
+                    document.getElementById('updateStatusModal').classList.add('hidden');
+                    document.getElementById('citaModal').classList.add('hidden');
+                    location.reload(); // Reload the page to reflect changes
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error al actualizar el estado:", xhr.responseText);
+                    alert("Error al actualizar el estado de la cita.");
+                }
+            });
+        });
+
+        // Cerrar el modal de detalles de la cita
+        document.getElementById('closeModal').addEventListener('click', () => {
+            document.getElementById('citaModal').classList.add('hidden');
+        });
+
+        // Manejar el clic en una cita
+        weekGrid.addEventListener('click', async (event) => {
+            const citaDiv = event.target.closest('.cita');
+            if (citaDiv && citaDiv.dataset.id) {
+                const citaId = citaDiv.dataset.id;
+                
+                $.ajax({
+                    url: `/Principal/Calendario/Index?handler=CitaDetails&id=${citaId}`,
+                    method: 'GET',
+                    success: function(result) {
+                        console.log("Detalles de cita recibidos:", result);
+                        showCitaDetails(result);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Error al obtener detalles:", error);
+                        if (xhr.status === 401) {
+                            alert("No tienes permiso para ver los detalles de esta cita.");
+                        } else {
+                            alert("Error al cargar los detalles de la cita.");
+                        }
+                    }
+                });
+            }
+        });
+
+        // Mostrar modal para crear nueva cita
+        function showCreateCitaModal(day, hour, half) {
+            const newCitaHora = document.getElementById('newCitaHora');
+            const selectedDate = new Date(currentDate);
+            const startOfWeek = getMonday(currentDate);
+            selectedDate.setDate(startOfWeek.getDate() + day);
+            selectedDate.setHours(hour);
+            selectedDate.setMinutes(half * 30);
+            selectedDate.setSeconds(0);
+            selectedDate.setMilliseconds(0);
+
+            // Adjust for timezone offset
+            const timezoneOffset = selectedDate.getTimezoneOffset() * 60000;
+            const adjustedDate = new Date(selectedDate.getTime() - timezoneOffset);
+            newCitaHora.value = adjustedDate.toISOString().slice(0, 19);
+
+            document.getElementById('createCitaModal').classList.remove('hidden');
+        }
+
+        // Cerrar el modal de crear cita
+        document.getElementById('closeCreateModal').addEventListener('click', () => {
+            document.getElementById('createCitaModal').classList.add('hidden');
+        });
+
+        // Validar campos requeridos antes de enviar el formulario
+        document.querySelector('form[method="post"]').addEventListener('submit', function (event) {
+            let isValid = true;
+
+            const empresaField = document.getElementById('newCitaEmpresa');
+            const mecanicoField = document.getElementById('newCitaMecanico');
+            const clienteField = document.getElementById('newCitaCliente');
+            const especialidadField = document.getElementById('newCitaEspecialidad');
+
+            if (!empresaField.value) {
+                isValid = false;
+                empresaField.nextElementSibling.classList.remove('hidden');
+                empresaField.previousElementSibling.classList.remove('hidden');
+            } else {
+                empresaField.nextElementSibling.classList.add('hidden');
+                empresaField.previousElementSibling.classList.add('hidden');
+            }
+
+            if (!mecanicoField.value) {
+                isValid = false;
+                mecanicoField.nextElementSibling.classList.remove('hidden');
+                mecanicoField.previousElementSibling.classList.remove('hidden');
+            } else {
+                mecanicoField.nextElementSibling.classList.add('hidden');
+                mecanicoField.previousElementSibling.classList.add('hidden');
+            }
+
+            if (!clienteField.value) {
+                isValid = false;
+                clienteField.nextElementSibling.classList.remove('hidden');
+                clienteField.previousElementSibling.classList.remove('hidden');
+            } else {
+                clienteField.nextElementSibling.classList.add('hidden');
+                clienteField.previousElementSibling.classList.add('hidden');
+            }
+
+            if (!especialidadField.value) {
+                isValid = false;
+                especialidadField.nextElementSibling.classList.remove('hidden');
+                especialidadField.previousElementSibling.classList.remove('hidden');
+            } else {
+                especialidadField.nextElementSibling.classList.add('hidden');
+                especialidadField.previousElementSibling.classList.add('hidden');
+            }
+
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+
+        // Manejar el clic en un espacio vacío para crear una cita
+        weekGrid.addEventListener('click', (event) => {
+            const timeSlot = event.target.closest('.border');
+            if (timeSlot && !timeSlot.querySelector('.cita')) {
+                const day = parseInt(timeSlot.dataset.day);
+                const hour = parseInt(timeSlot.dataset.hour);
+                const half = parseInt(timeSlot.dataset.half);
+                showCreateCitaModal(day, hour, half);
+            }
+        });
+
+        // Inicializar estilos de los botones de filtro
+        const botonesFilter = document.querySelectorAll('[data-filter]');
+        botonesFilter.forEach(boton => {
+            boton.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+        });
+        
+        // Establecer el filtro "todos" como activo por defecto
+        const botonTodos = document.querySelector('[data-filter="todos"]');
+        if (botonTodos) {
+            botonTodos.classList.remove('bg-gray-200', 'text-gray-700');
+            botonTodos.classList.add('bg-blue-600', 'text-white');
+        }
+
+        // Almacena la lista de servicios y sus costos (ejemplo)
+        const servicios = @Html.Raw(Json.Serialize(ViewBag.ListaServiciosConValor)); 
+        // ...existing code...
+        // Dentro de document.addEventListener("DOMContentLoaded", function () {...})
+        const selectServicio = document.getElementById('newCitaTipo');
+        const serviceCostInput = document.getElementById('serviceCost');
+
+        console.log("Servicios disponibles:", servicios);
+
+        if (selectServicio && servicios && serviceCostInput) {
+            selectServicio.addEventListener('change', function() {
+                console.log("Servicio seleccionado:", this.value);
+                const selectedId = parseInt(this.value);
+                const servicioSeleccionado = servicios.find(s => s.f014_rowid === selectedId);
+                serviceCostInput.value = servicioSeleccionado ? servicioSeleccionado.f014_valor : "0";
+            });
+        }
+    });
+
+    // Agregar esta función después de los scripts existentes
+    document.getElementById('createCitaForm').addEventListener('submit', function(e) {
+        const submitButton = document.getElementById('submitCreateCita');
+        
+        // Si el botón ya está deshabilitado, evitar el envío
+        if (submitButton.disabled) {
+            e.preventDefault();
+            return false;
+        }
+
+        // Deshabilitar el botón y mostrar estado de carga
+        submitButton.disabled = true;
+        submitButton.querySelector('span:first-child').classList.add('hidden');
+        submitButton.querySelector('span:last-child').classList.remove('hidden');
+        
+        // Rehabilitar el botón después de 10 segundos por si hay algún error
+        setTimeout(() => {
+            submitButton.disabled = false;
+            submitButton.querySelector('span:first-child').classList.remove('hidden');
+            submitButton.querySelector('span:last-child').classList.add('hidden');
+        }, 10000);
+
+        return true;
+    });
+
+    // Agregar función para copiar el token
+    function filtrarCitas(estado) {
+        const filas = document.querySelectorAll('.fila-cita'); // Ejemplo de selector
+        estado = estado.toLowerCase();
+
+        filas.forEach(fila => {
+            const estadoCita = fila.getAttribute('data-estado')?.toLowerCase() || 'todos';
+            fila.style.display = (estado === 'todos' || estadoCita === estado) ? '' : 'none';
+        });
+    }
+
+    // Modificar la función toggleSection existente
+    function toggleSection(sectionId) {
+        const content = document.getElementById(`${sectionId}-content`);
+        const arrow = document.getElementById(`${sectionId}-arrow`);
+        
+        content.classList.toggle('hidden');
+        arrow.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        
+        // Inicializar el filtro en "todos" cuando se abre el panel
+        if (!content.classList.contains('hidden')) {
+            filtrarCitas('todos');
+        }
+    }
+
+    // Agregar función para copiar el token
+    function copiarToken(token) {
+        navigator.clipboard.writeText(token).then(() => {
+            // Mostrar feedback visual
+            const copyButton = event.target.closest('button');
+            const originalIcon = copyButton.innerHTML;
+            copyButton.innerHTML = '<i class="fas fa-check"></i>';
+            copyButton.disabled = true;
+            
+            setTimeout(() => {
+                copyButton.innerHTML = originalIcon;
+                copyButton.disabled = false;
+            }, 2000);
+        }).catch(err => {
+            console.error('Error al copiar el token:', err);
+            alert('No se pudo copiar el token. Por favor, cópielo manualmente.');
+        });
+    }
+</script>
+
+<style>
+    /* Estilo personalizado para la barra de desplazamiento */
+    .overflow-y-auto::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .overflow-y-auto::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+
+    .overflow-y-auto::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+
+    .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /* Estilos para los botones de filtro */
+    [data-filter] {
+        transition: all 0.3s ease;
+    }
+
+    [data-filter]:hover {
+        transform: translateY(-1px);
+    }
+
+    /* Estilos para el select de filtro */
+    select#filtro-estados {
+        min-width: 150px;
+        transition: all 0.2s ease;
+    }
+
+    select#filtro-estados:hover {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+</style>
+
+

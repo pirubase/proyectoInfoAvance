@@ -1,0 +1,85 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Mecanico.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Crear</h1>
+
+<h4 style="margin-bottom: 20px;" class="text-xl font-medium">Mecanico</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+@*             <div class="form-group">
+                <label asp-for="t006_mecanico.f006_ts" class="control-label"></label>
+                <input asp-for="t006_mecanico.f006_ts" class="form-control" />
+                <span asp-validation-for="t006_mecanico.f006_ts" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t006_mecanico.f006_nombre" class="control-label"></label>
+                <input asp-for="t006_mecanico.f006_nombre" class="form-control" />
+                <span asp-validation-for="t006_mecanico.f006_nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t006_mecanico.f006_apellido" class="control-label"></label>
+                <input asp-for="t006_mecanico.f006_apellido" class="form-control" />
+                <span asp-validation-for="t006_mecanico.f006_apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t006_mecanico.f006_correo" class="control-label"></label>
+                <input asp-for="t006_mecanico.f006_correo" class="form-control" />
+                <span asp-validation-for="t006_mecanico.f006_correo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t006_mecanico.f006_telefono" class="control-label"></label>
+                <input asp-for="t006_mecanico.f006_telefono" class="form-control" />
+                <span asp-validation-for="t006_mecanico.f006_telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t006_mecanico.f006_direccion" class="control-label"></label>
+                <input asp-for="t006_mecanico.f006_direccion" class="form-control" />
+                <span asp-validation-for="t006_mecanico.f006_direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t006_mecanico.f006_años_experiencia" class="control-label"></label>
+                <input asp-for="t006_mecanico.f006_años_experiencia" class="form-control" />
+                <span asp-validation-for="t006_mecanico.f006_años_experiencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t006_mecanico.f006_tarifa_hora" class="control-label"></label>
+                <input asp-for="t006_mecanico.f006_tarifa_hora" class="form-control" type="number" step="0.01" />
+                <span asp-validation-for="t006_mecanico.f006_tarifa_hora" class="text-danger"></span>
+            </div>
+  @*           <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t006_mecanico.f006_rowid_especialidad" class="control-label"></label>
+                <select asp-for="t006_mecanico.f006_rowid_especialidad" class ="form-control" asp-items="ViewBag.f006_rowid_especialidad"></select>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="t006_mecanico.f006_rowid_empresa_o_persona_natural" class="control-label"></label>
+                <select asp-for="t006_mecanico.f006_rowid_empresa_o_persona_natural" class ="form-control" asp-items="ViewBag.f006_rowid_empresa_o_persona_natural"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

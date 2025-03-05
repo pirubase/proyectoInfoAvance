@@ -1,0 +1,69 @@
+﻿body {
+}
+.modalRecuperacion {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    animation: fadeIn 0.3s ease-out;
+}
+
+
+.modalRecuperacion-content {
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 20px;
+    border: none;
+    width: 40%;
+    border-radius: 10px; /* Redondear esquinas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* Sombra suave */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+input {
+    font-size: 1rem; /* Tamaño del texto */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Ocupar todo el espacio del contenedor */
+    max-width: 300px; /* Ancho máximo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.input-full-width {
+    width: 100%; /* Se asegura de que ocupe todo el contenedor */
+    max-width: 300px; /* Ancho máximo para alinear con el botón */
+    margin: 0 auto; /* Centrar los campos */
+    display: block; /* Evitar problemas de alineación */
+}

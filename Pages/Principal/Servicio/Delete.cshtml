@@ -1,0 +1,52 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Servicio.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Eliminar</h1>
+
+<h3 style="margin-bottom: 20px;" class="text-2xl font-semibold">¿Esta seguro de eliminar este registro?</h3>
+<div>
+    <h4 style="margin-bottom: 20px;" class="text-xl font-medium">Servicio</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t014_servicio.f014_ts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t014_servicio.f014_ts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t014_servicio.f014_id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t014_servicio.f014_id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t014_servicio.f014_nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t014_servicio.f014_nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t014_servicio.f014_valor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t014_servicio.f014_valor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t014_servicio.vObjEmpresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t014_servicio.vObjEmpresa.f002_alcance)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="t014_servicio.f014_rowid" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-page="./Index">Regresar</a>
+    </form>
+</div>

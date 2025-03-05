@@ -1,0 +1,222 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Permisos.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Permisos</h1>
+
+<form method="post">
+    <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Crear nueva ciudad" asp-page-handler="IrACrear">Administrar</button>
+</form>
+
+<div style="margin-top: 20px;" class="table-responsive">
+    
+    <table id="datatable-buttons" class="table table-striped table-bordered datatable" style="width:100%">
+        <thead>
+            <tr class="headings">
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].f003_ts)
+                </th>
+               @*  <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].f003_id)
+                </th> *@
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].f003_permiso_consultar)
+                </th>
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].f003_permiso_crear)
+                </th>
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].f003_permiso_editar)
+                </th>
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].f003_permiso_detalle)
+                </th>
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].f003_permiso_eliminar)
+                </th>
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].f003_permiso_uso_menu)
+                </th>
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].vObjEmpresa)
+                </th>
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].vObjMenu)
+                </th>
+                <th class="column-title">
+                    @Html.DisplayNameFor(model => model.t003_permisos[0].vObjPerfil)
+                </th>
+                @* <th class="column-title">Acciones</th> *@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.t003_permisos)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.f003_ts)
+                    </td>
+             @*        <td>
+                        @Html.DisplayFor(modelItem => item.f003_id)
+                    </td> *@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.f003_permiso_consultar)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.f003_permiso_crear)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.f003_permiso_editar)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.f003_permiso_detalle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.f003_permiso_eliminar)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.f003_permiso_uso_menu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.vObjEmpresa.f002_razon_social)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.vObjMenu.f005_nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.vObjPerfil.f004_descripcion)
+                    </td>
+                    @* <td>
+                        <a asp-page="./Edit" asp-route-id="@item.f003_rowid">Editar</a> |
+                        <a asp-page="./Details" asp-route-id="@item.f003_rowid">Detalles</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.f003_rowid">Eliminar</a>
+                    </td> *@
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div id="alert-container" class="fixed top-5 right-5 hidden">
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <strong class="font-bold">Error:</strong>
+            <span class="block sm:inline" id="alert-message"></span>
+            <span id="close-alert" class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer text-red-700">
+                &times;
+            </span>
+        </div>
+    </div>
+    <div id="success-alert-container" class="fixed top-5 right-5 hidden">
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+            <strong class="font-bold">Exito:</strong>
+            <span class="block sm:inline" id="success-alert-message"></span>
+            <span id="close-success-alert" class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer text-green-700">
+                &times;
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#datatable-buttons').DataTable({
+            dom: '<"top"lfB>rt<"bottom"ip>',
+            buttons: [
+                {
+                    extend: 'copy',
+                    className: 'btn',
+                    text: '<i class="fa fa-copy"></i> Copiar'
+                },
+                {
+                    extend: 'csv',
+                    className: 'btn',
+                    text: '<i class="fa fa-file-csv"></i> CSV'
+                },
+                {
+                    extend: 'excel',
+                    className: 'btn',
+                    text: '<i class="fa fa-file-excel"></i> Excel'
+                },
+                {
+                    extend: 'pdf',
+                    className: 'btn',
+                    text: '<i class="fa fa-file-pdf"></i> PDF'
+                },
+                {
+                    extend: 'print',
+                    className: 'btn',
+                    text: '<i class="fa fa-print"></i> Imprimir'
+                }
+            ],
+            language: {
+                url: '/FrameworkInterno/vendors/es-ES-.json',
+                search: "Buscar:",
+                lengthMenu: "Mostrar _MENU_ registros por página",
+                info: "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                infoEmpty: "Mostrando 0 a 0 de 0 registros",
+                infoFiltered: "(filtrado de _MAX_ registros totales)",
+                paginate: {
+                    first: "Primero",
+                    last: "Último",
+                    next: "Siguiente",
+                    previous: "Anterior"
+                }
+            },
+            pageLength: 10,
+            responsive: true,
+            order: [[0, 'desc']],
+            columnDefs: [
+                {
+                    targets: -1,
+                    orderable: false,
+                    searchable: false
+                }
+            ]
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const alertMessage = '@TempData["ErrorMessage"]'; // Obtén el mensaje desde el TempData
+        if (alertMessage) {
+            const alertContainer = document.getElementById("alert-container");
+            const alertText = document.getElementById("alert-message");
+            const closeAlert = document.getElementById("close-alert");
+
+            alertText.textContent = alertMessage;
+            alertContainer.classList.remove("hidden");
+
+            // Ocultar la alerta al dar clic en cerrar
+            closeAlert.addEventListener("click", function () {
+                alertContainer.classList.add("hidden");
+            });
+
+            // Opcional: Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                alertContainer.classList.add("hidden");
+            }, 5000);
+        }
+
+        const successMessage = '@TempData["SuccessMessage"]'; // Obtén el mensaje desde el TempData
+        if (successMessage) {
+            const successAlertContainer = document.getElementById("success-alert-container");
+            const successAlertText = document.getElementById("success-alert-message");
+            const closeSuccessAlert = document.getElementById("close-success-alert");
+
+            successAlertText.textContent = successMessage;
+            successAlertContainer.classList.remove("hidden");
+
+            // Ocultar la alerta al dar clic en cerrar
+            closeSuccessAlert.addEventListener("click", function () {
+                successAlertContainer.classList.add("hidden");
+            });
+
+            // Opcional: Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                successAlertContainer.classList.add("hidden");
+            }, 5000);
+        }
+    });
+</script>

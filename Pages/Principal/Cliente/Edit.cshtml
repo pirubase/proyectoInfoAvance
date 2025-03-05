@@ -1,0 +1,106 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Cliente.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Editar</h1>
+
+<h4 style="margin-bottom: 20px;" class="text-xl font-medium">Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="t007_cliente.f007_rowid" />
+            <div class="form-group">
+                <label asp-for="t007_cliente.f007_ts" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_ts" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_ts" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_id" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_id" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_nombre" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_nombre" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_apellido" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_apellido" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_correo" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_correo" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_correo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_telefono" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_telefono" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_direccion" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_direccion" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_direccion" class="text-danger"></span>
+            </div>
+@*             <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_marca" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_marca" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_marca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_modelo" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_modelo" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_modelo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_año" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_año" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_año" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="t007_cliente.f007_placa" class="control-label"></label>
+                <input asp-for="t007_cliente.f007_placa" class="form-control" />
+                <span asp-validation-for="t007_cliente.f007_placa" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="t007_cliente.f007_rowid_mecanico_familia" class="control-label"></label>
+                <select asp-for="t007_cliente.f007_rowid_mecanico_familia" class="form-control" asp-items="ViewBag.f007_rowid_mecanico_familia"></select>
+                <span asp-validation-for="t007_cliente.f007_rowid_mecanico_familia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t007_cliente.f007_rowid_empresa_o_persona_natural" class="control-label"></label>
+                <select asp-for="t007_cliente.f007_rowid_empresa_o_persona_natural" class="form-control" asp-items="ViewBag.f007_rowid_empresa_o_persona_natural"></select>
+                <span asp-validation-for="t007_cliente.f007_rowid_empresa_o_persona_natural" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,105 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Cita.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Editar</h1>
+
+<h4 style="margin-bottom: 20px;" class="text-xl font-medium">Cita</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="t009_cita.f009_rowid" />
+   @*          <div class="form-group">
+                <label asp-for="t009_cita.f009_ts" class="control-label"></label>
+                <input asp-for="t009_cita.f009_ts" class="form-control" />
+                <span asp-validation-for="t009_cita.f009_ts" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="t009_cita.f009_hora" class="control-label"></label>
+                <input asp-for="t009_cita.f009_hora" class="form-control" />
+                <span asp-validation-for="t009_cita.f009_hora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t009_cita.f009_rowid_servicio" class="control-label"></label>
+                <select asp-for="t009_cita.f009_rowid_servicio" class="form-control" asp-items="ViewBag.f009_rowid_servicio"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_servicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t009_cita.f009_rowid_especialidad" class="control-label"></label>
+                <select asp-for="t009_cita.f009_rowid_especialidad" class="form-control" asp-items="ViewBag.f009_rowid_especialidad"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_especialidad" class="text-danger"></span>
+            </div>
+  @*           <div class="form-group">
+                <label asp-for="t009_cita.f009_observacion" class="control-label"></label>
+                <input asp-for="t009_cita.f009_observacion" class="form-control" />
+                <span asp-validation-for="t009_cita.f009_observacion" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="t009_cita.f009_rowid_mecanico" class="control-label"></label>
+                <select asp-for="t009_cita.f009_rowid_mecanico" class="form-control" asp-items="ViewBag.f009_rowid_mecanico"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_mecanico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t009_cita.f009_rowid_empresa_o_persona_natural" class="control-label"></label>
+                <select asp-for="t009_cita.f009_rowid_empresa_o_persona_natural" class="form-control" asp-items="ViewBag.f009_rowid_empresa_o_persona_natural"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_empresa_o_persona_natural" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="t009_cita.f009_rowid_cliente" class="control-label"></label>
+                <select asp-for="t009_cita.f009_rowid_cliente" class="form-control" asp-items="ViewBag.f009_rowid_cliente"></select>
+                <span asp-validation-for="t009_cita.f009_rowid_cliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div id="alert-container" class="fixed top-5 right-5 hidden">
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <strong class="font-bold">Error:</strong>
+            <span class="block sm:inline" id="alert-message"></span>
+            <span id="close-alert" class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer text-red-700">
+                &times;
+            </span>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Regresar</a>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script src="/js/create-cita.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const alertMessage = '@TempData["ErrorMessage"]'; // Obtén el mensaje desde el TempData
+        if (alertMessage) {
+            const alertContainer = document.getElementById("alert-container");
+            const alertText = document.getElementById("alert-message");
+            const closeAlert = document.getElementById("close-alert");
+
+            alertText.textContent = alertMessage;
+            alertContainer.classList.remove("hidden");
+
+            // Ocultar la alerta al dar clic en cerrar
+            closeAlert.addEventListener("click", function () {
+                alertContainer.classList.add("hidden");
+            });
+
+            // Opcional: Ocultar automáticamente después de 5 segundos
+            setTimeout(() => {
+                alertContainer.classList.add("hidden");
+            }, 5000);
+        }
+    });
+</script>

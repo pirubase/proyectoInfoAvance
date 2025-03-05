@@ -1,0 +1,100 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Permisos.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-3xl font-bold">Administracion de permisos</h1>
+
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* <div class="form-group">
+                <label asp-for="t003_permisos.f003_id" class="control-label"></label>
+                <input asp-for="t003_permisos.f003_id" class="form-control" />
+                <span asp-validation-for="t003_permisos.f003_id" class="text-danger"></span>
+            </div> *@ 
+
+            <div class="form-group">
+                <label asp-for="t003_permisos.f003_rowid_empresa_o_persona_natural" class="control-label"></label>
+                <select asp-for="t003_permisos.f003_rowid_empresa_o_persona_natural" class="form-control" asp-items="ViewBag.f003_rowid_empresa_o_persona_natural"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="t003_permisos.f003_rowid_menu" class="control-label"></label>
+                <select asp-for="t003_permisos.f003_rowid_menu" class="form-control" asp-items="ViewBag.f003_rowid_menu" id="menuSelect"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="t003_permisos.f003_rowid_perfil" class="control-label"></label>
+                <select asp-for="t003_permisos.f003_rowid_perfil" class="form-control" asp-items="ViewBag.f003_rowid_perfil" id="perfilSelect"></select>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Acción de Permiso</label>
+                <div>
+                    <input type="radio" id="asignar" name="AccionPermiso" value="Asignar" />
+                    <label for="asignar">Asignar</label>
+                    <input type="radio" id="quitar" name="AccionPermiso" value="Quitar" />
+                    <label for="quitar">Quitar</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Actualizar" class="btn btn-dark" />
+            </div>
+        </form>
+    </div>
+
+    <!-- Cuadro de permisos actuales -->
+    <div class="col-md-6">
+        <h4>Permisos Actuales</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Menú</th>
+                    <th>Permiso</th>
+                </tr>
+            </thead>
+            <tbody id="permisosMenus">
+                <!-- Se cargará dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        // Llama al nuevo handler para obtener todos los menús y permisos
+        function actualizarPermisosMenuPerfil() {
+            const perfilId = document.getElementById('perfilSelect').value;
+            fetch(`/Principal/Permisos/Create?handler=AllPermisos&perfilId=${perfilId}`)
+                .then(response => response.json())
+                .then(data => {
+                    let filas = "";
+                    data.forEach(item => {
+                        const icono = item.hasPerm ? '✔' : '✖';
+                        filas += `<tr><td>${item.menu}</td><td>${icono}</td></tr>`;
+                    });
+                    document.getElementById("permisosMenus").innerHTML = filas;
+                });
+        }
+
+        // Reemplaza la anterior llamada y usa la nueva
+        document.getElementById('menuSelect').addEventListener('change', actualizarPermisosMenuPerfil);
+        document.getElementById('perfilSelect').addEventListener('change', actualizarPermisosMenuPerfil);
+
+        document.addEventListener('DOMContentLoaded', actualizarPermisosMenuPerfil);
+    </script>
+}

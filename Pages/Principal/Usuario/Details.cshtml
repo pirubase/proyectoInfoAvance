@@ -1,0 +1,79 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.Usuario.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="margin-bottom: 20px;" class="text-3xl font-bold">Detalles</h1>
+
+<div>
+    <h4 style="margin-bottom: 20px;" class="text-xl font-medium">Usuario</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.f001_ts)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.f001_ts)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.f001_id_usuario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.f001_id_usuario)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.f001_clave)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.f001_clave)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.f001_nombres)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.f001_nombres)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.f001_apellidos)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.f001_apellidos)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.f001_correo_electronico)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.f001_correo_electronico)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.f001_numero_celular)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.f001_numero_celular)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.vObjPerfil)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.vObjPerfil.f004_descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.vObjEmpresa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.vObjEmpresa.f002_alcance)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.t001_usuario.vObjEstado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.t001_usuario.vObjEstado.f008_nombre_estado)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.t001_usuario.f001_rowid">Editar</a> |
+    <a asp-page="./Index">Regresar</a>
+</div>
