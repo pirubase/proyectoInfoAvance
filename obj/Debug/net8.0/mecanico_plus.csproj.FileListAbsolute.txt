@@ -761,3 +761,4 @@ C:\Users\sebas\Documents\proyectoInfoAvance\obj\Debug\net8.0\scopedcss\projectbu
 C:\Users\sebas\Documents\proyectoInfoAvance\obj\Debug\net8.0\mecanico.5A867A04.Up2Date
 C:\Users\sebas\Documents\proyectoInfoAvance\obj\Debug\net8.0\mecanico_plus.genruntimeconfig.cache
 C:\Users\sebas\Documents\proyectoInfoAvance\obj\Debug\net8.0\ref\mecanico_plus.dll
+C:\Users\sebas\Documents\proyectoInfoAvance\obj\Debug\net8.0\mecanico_plus.sourcelink.json

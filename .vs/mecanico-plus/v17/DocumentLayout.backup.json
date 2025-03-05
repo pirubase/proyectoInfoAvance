@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -150,11 +154,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Principal\\Especialidad\\Create.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Principal\\Especialidad\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T23:42:42.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\package.json",
               "RelativeDocumentMoniker": "package.json",
@@ -162,12 +179,11 @@
               "RelativeToolTip": "package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T21:22:51.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:22:51.981Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
@@ -175,12 +191,11 @@
               "RelativeToolTip": "Pages\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:21:11.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:21:11.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
@@ -188,12 +203,11 @@
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:20:52.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:20:52.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
@@ -201,12 +215,11 @@
               "RelativeToolTip": "Pages\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:20:47.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:20:47.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "t001_usuario.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\t001_usuario.cs",
               "RelativeDocumentMoniker": "Data\\t001_usuario.cs",
@@ -214,12 +227,11 @@
               "RelativeToolTip": "Data\\t001_usuario.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAArwEsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:55:21.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:55:21.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -227,12 +239,11 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-05T21:23:29.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:23:29.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ValidationScriptsPartial.cshtml",
@@ -240,12 +251,11 @@
               "RelativeToolTip": "Pages\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:20:41.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:20:41.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\_Layout.cshtml",
@@ -253,12 +263,11 @@
               "RelativeToolTip": "Pages\\Principal\\_Layout.cshtml",
               "ViewState": "AgIAAJkAAAAAAAAAAAAswK8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:11:37.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:11:37.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "LogoutController.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\LogoutController.cs",
               "RelativeDocumentMoniker": "APIs\\LogoutController.cs",
@@ -266,12 +275,11 @@
               "RelativeToolTip": "APIs\\LogoutController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:23:14.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:23:14.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TokenGenerator.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\TokenGenerator.cs",
               "RelativeDocumentMoniker": "APIs\\TokenGenerator.cs",
@@ -279,12 +287,11 @@
               "RelativeToolTip": "APIs\\TokenGenerator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:23:20.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:23:20.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\wwwroot\\css\\styles.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
@@ -292,12 +299,11 @@
               "RelativeToolTip": "wwwroot\\css\\styles.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-05T21:23:34.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:23:34.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Create.cshtml",
@@ -305,12 +311,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cliente\\Create.cshtml",
               "ViewState": "AgIAACMAAAAAAAAAAAAswDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:17:45.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:17:45.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Index.cshtml.cs",
@@ -318,12 +323,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cita\\Index.cshtml.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAuwCUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:08:12.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:08:12.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -331,12 +335,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAL8AAAAAAAAAAIBZwMwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:57:10.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:57:10.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "APIgenerica.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\APIgenerica.cs",
               "RelativeDocumentMoniker": "APIs\\APIgenerica.cs",
@@ -344,12 +347,11 @@
               "RelativeToolTip": "APIs\\APIgenerica.cs",
               "ViewState": "AgIAAI0AAAAAAAAAAAAvwJgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:08:06.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:08:06.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Index.cshtml",
@@ -357,12 +359,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cliente\\Index.cshtml",
               "ViewState": "AgIAADkAAAAAAAAAAIBZwE4AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:17:11.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:17:11.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Create.cshtml.cs",
@@ -370,12 +371,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cliente\\Create.cshtml.cs",
               "ViewState": "AgIAABoAAAAAAAAAAIBZwDEAAABYAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:17:41.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:17:41.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Usuario\\Index.cshtml.cs",
@@ -383,12 +383,11 @@
               "RelativeToolTip": "Pages\\Principal\\Usuario\\Index.cshtml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAuwCEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:07:56.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:07:56.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Servicio\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Servicio\\Index.cshtml.cs",
@@ -396,12 +395,11 @@
               "RelativeToolTip": "Pages\\Principal\\Servicio\\Index.cshtml.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAuwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:07:33.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:07:33.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Permisos\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Permisos\\Index.cshtml.cs",
@@ -409,12 +407,11 @@
               "RelativeToolTip": "Pages\\Principal\\Permisos\\Index.cshtml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAuwCEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:07:23.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:07:23.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Perfil\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Perfil\\Index.cshtml.cs",
@@ -422,12 +419,11 @@
               "RelativeToolTip": "Pages\\Principal\\Perfil\\Index.cshtml.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAuwCMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:07:12.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:07:12.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Mecanico\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Mecanico\\Index.cshtml.cs",
@@ -435,12 +431,11 @@
               "RelativeToolTip": "Pages\\Principal\\Mecanico\\Index.cshtml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAuwB8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:06:59.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:06:59.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Especialidad\\Index.cshtml.cs",
@@ -448,12 +443,11 @@
               "RelativeToolTip": "Pages\\Principal\\Especialidad\\Index.cshtml.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAuwCQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:06:46.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:06:46.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Index.cshtml.cs",
@@ -461,12 +455,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cliente\\Index.cshtml.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAuwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:06:30.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:06:30.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Finalizar.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
@@ -474,12 +467,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAuwGQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:06:19.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:06:19.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Edit.cshtml.cs",
@@ -487,12 +479,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cita\\Edit.cshtml.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAIBZwJ8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:06:12.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:06:12.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Delete.cshtml.cs",
@@ -500,12 +491,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cita\\Delete.cshtml.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAIBZwJAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:06:04.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:06:04.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Create.cshtml.cs",
@@ -513,12 +503,11 @@
               "RelativeToolTip": "Pages\\Principal\\Cita\\Create.cshtml.cs",
               "ViewState": "AgIAAJoAAAAAAAAAAIBZwKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:05:56.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:05:56.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Calendario\\Index.cshtml.cs",
@@ -526,12 +515,11 @@
               "RelativeToolTip": "Pages\\Principal\\Calendario\\Index.cshtml.cs",
               "ViewState": "AgIAAOIBAAAAAAAAAIBZwOkBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:04:57.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:04:57.533Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Base\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Base\\Index.cshtml.cs",
@@ -539,12 +527,11 @@
               "RelativeToolTip": "Pages\\Principal\\Base\\Index.cshtml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAuwBoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:03:59.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:03:59.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "LoginDomain.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
               "RelativeDocumentMoniker": "Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
@@ -552,12 +539,11 @@
               "RelativeToolTip": "Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAvwCwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:58:35.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:58:35.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "PermisosDAO.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
               "RelativeDocumentMoniker": "Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
@@ -565,12 +551,11 @@
               "RelativeToolTip": "Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAvwD8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:58:24.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:58:24.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "LoginDAO.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\LoginDAO.cs",
               "RelativeDocumentMoniker": "Pages\\Backend\\accesoDatos\\LoginDAO.cs",
@@ -578,12 +563,11 @@
               "RelativeToolTip": "Pages\\Backend\\accesoDatos\\LoginDAO.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAvwDAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:58:19.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:58:19.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "t013_documento.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\t013_documento.cs",
               "RelativeDocumentMoniker": "Data\\t013_documento.cs",
@@ -591,12 +575,11 @@
               "RelativeToolTip": "Data\\t013_documento.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAuwCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:55:35.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:55:35.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "local.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\local.cs",
               "RelativeDocumentMoniker": "Data\\local.cs",
@@ -604,8 +587,7 @@
               "RelativeToolTip": "Data\\local.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA+wBYAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:54:42.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:54:42.773Z"
             }
           ]
         }
