@@ -28,8 +28,8 @@ namespace mecanico_plus.Data
          public DbSet<mecanico_plus.Data.t012_token> t012_token { get; set; } = default!;
         public DbSet<mecanico_plus.Data.t013_documento> t013_documento { get; set; } = default!;
         public DbSet<mecanico_plus.Data.t014_servicio> t014_servicio { get; set; } = default!;
-     
 
+        public DbSet<mecanico_plus.Data.t016_auditoria_mecanico> t016_auditoria_mecanico { get; set; } = default!;
 
         // protected override void OnModelCreating(ModelBuilder modelBuilder)
         // {

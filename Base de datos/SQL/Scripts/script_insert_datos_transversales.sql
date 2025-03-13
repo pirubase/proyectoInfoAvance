@@ -26,7 +26,8 @@ VALUES
     (current_date, 7, 'vehiculos', 'Gestion de vehiculos'),
     (current_date, 8, 'citas', 'Gestion de citas'),
     (current_date, 9, 'calendarios', 'Gestion de calendarios'),
-    (current_date, 10, 'servicios', 'Gestion de servicios');
+    (current_date, 10, 'servicios', 'Gestion de servicios'),
+    (current_date, 11, 'calendario mecanicos', 'Gestion de calendario mecanicos');
 
     
     

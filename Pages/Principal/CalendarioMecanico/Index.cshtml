@@ -1,0 +1,460 @@
+﻿@page
+@model mecanico_plus.Pages.Principal.CalendarioMecanico.IndexModel
+@{
+    ViewData["Title"] = "Calendario Mecanicos";
+}
+
+<div class="bg-white p-6 rounded-lg shadow mb-6">
+    <h1 class="text-xl font-bold mb-4">Registro de horas</h1>
+
+    <!-- Simple calendar interface: user selects start/end times -->
+    <div class="mb-4">
+        <button class="bg-blue-900 text-white px-4 py-2 rounded" onclick="openCreateModal()">
+            Crear registro de horas
+        </button>
+    </div>
+
+    <!-- Modal for creating auditoria with start/end times -->
+    <div id="createAuditoriaModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+            <h2 class="text-xl font-bold mb-4">Crear registro de horas</h2>
+            <form method="post" asp-page-handler="CreateAuditoria">
+                <!-- Start time -->
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700">Fecha/Hora Inicio</label>
+                    <input type="datetime-local" id="startDateTime" asp-for="t016_auditoria_mecanico.f016_fecha_inicio" class="border rounded w-full px-2 py-1" />
+                </div>
+                <!-- End time -->
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700">Fecha/Hora Final</label>
+                    <input type="datetime-local" asp-for="t016_auditoria_mecanico.f016_fecha_finalizacion" class="border rounded w-full px-2 py-1" />
+                </div>
+                <!-- Mechanic -->
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700">Mecánico</label>
+                    <select asp-for="t016_auditoria_mecanico.f016_rowid_mecanico" class="border rounded w-full px-2 py-1">
+                        <option value="">-- Seleccione un Mecánico --</option>
+                        @foreach (var mec in (SelectList)ViewData["Mecanicos"])
+                        {
+                            <option value="@mec.Value">@mec.Text</option>
+                        }
+                    </select>
+                </div>
+                <!-- Empresa -->
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700">Empresa</label>
+                    <select asp-for="t016_auditoria_mecanico.f016_rowid_empresa_o_persona_natural" class="border rounded w-full px-2 py-1">
+                        <option value="">-- Seleccione una Empresa --</option>
+                        @foreach (var emp in (SelectList)ViewData["Empresas"])
+                        {
+                            <option value="@emp.Value">@emp.Text</option>
+                        }
+                    </select>
+                </div>
+                <!-- Optional description -->
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700">Descripción</label>
+                    <textarea asp-for="t016_auditoria_mecanico.f016_descripcion" class="border rounded w-full px-2 py-1"></textarea>
+                </div>
+
+                <!-- Hidden input for adjusted date -->
+                <input type="hidden" id="newAuditoriaHora" name="adjustedDate" />
+
+                <div class="flex justify-end space-x-4">
+                    <button type="button" class="bg-gray-300 px-4 py-2 rounded" onclick="closeCreateModal()">
+                        Cancelar
+                    </button>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">
+                        Guardar Auditoría
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for displaying auditoria details -->
+    <div id="auditoriaDetailsModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+            <h2 class="text-xl font-bold mb-4">Detalles del registro de horas</h2>
+            <div id="auditoriaDetailsContent">
+                <!-- Auditoria details will be populated here -->
+            </div>
+            <div class="flex justify-end space-x-4 mt-4">
+                <button type="button" class="bg-gray-300 px-4 py-2 rounded" onclick="closeAuditoriaDetailsModal()">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controles de navegación -->
+    <div class="flex justify-between items-center mb-4 sticky top-0 bg-white z-10">
+        <button id="prev-week" class="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">Semana anterior</button>
+        <h2 id="current-week" class="text-lg font-medium"></h2>
+        <button id="next-week" class="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">Semana siguiente</button>
+    </div>
+
+    <!-- Contenedor del calendario -->
+    <div class="grid grid-cols-8 border-t border-gray-200 text-sm relative">
+        <!-- Columna de horas -->
+        <div class="bg-gray-100 text-gray-800 font-semibold">
+            <div class="text-center py-2">Horas</div>
+            <div id="hours-column" class="grid grid-rows-24">
+                <!-- Aquí se generan dinámicamente las horas -->
+            </div>
+        </div>
+
+        <!-- Contenedor de días y bloques -->
+        <div class="col-span-7 relative">
+            <!-- Encabezados de los días -->
+            <div class="grid grid-cols-7 sticky top-12 bg-white z-20">
+                <div class="font-bold py-2 bg-gray-100 text-center" id="day-header-0">Lunes</div>
+                <div class="font-bold py-2 bg-gray-100 text-center" id="day-header-1">Martes</div>
+                <div class="font-bold py-2 bg-gray-100 text-center" id="day-header-2">Miércoles</div>
+                <div class="font-bold py-2 bg-gray-100 text-center" id="day-header-3">Jueves</div>
+                <div class="font-bold py-2 bg-gray-100 text-center" id="day-header-4">Viernes</div>
+                <div class="font-bold py-2 bg-gray-100 text-center" id="day-header-5">Sábado</div>
+                <div class="font-bold py-2 bg-gray-100 text-center" id="day-header-6">Domingo</div>
+            </div>
+
+            <!-- Filas de horarios y contenedores de auditorias -->
+            <div id="week-grid" class="grid grid-cols-7 relative">
+                <!-- Aquí se generarán dinámicamente las celdas de horarios -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openCreateModal() {
+    document.getElementById('createAuditoriaModal').classList.remove('hidden');
+}
+function closeCreateModal() {
+    document.getElementById('createAuditoriaModal').classList.add('hidden');
+}
+
+function openAuditoriaDetailsModal() {
+    document.getElementById('auditoriaDetailsModal').classList.remove('hidden');
+}
+function closeAuditoriaDetailsModal() {
+    document.getElementById('auditoriaDetailsModal').classList.add('hidden');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const weekGrid = document.getElementById('week-grid');
+    const hoursColumn = document.getElementById('hours-column');
+    const currentWeekLabel = document.getElementById('current-week');
+    const prevWeekBtn = document.getElementById('prev-week');
+    const nextWeekBtn = document.getElementById('next-week');
+
+    let currentDate = new Date();
+    const auditorias = @Html.Raw(Json.Serialize(Model.Auditorias.Select(a => new {
+        a.f016_rowid,
+        a.f016_fecha_inicio,
+        a.f016_fecha_finalizacion,
+        a.f016_descripcion,
+        MecanicoNombre = a.vObjMecanico.f006_nombre,
+        MecanicoApellido = a.vObjMecanico.f006_apellido,
+        EmpresaNombre = a.vObjEmpresa.f002_razon_social
+    })));
+
+    console.log(auditorias); // Log the auditorias array
+
+    // Renderiza las horas en la columna de la izquierda
+    function renderHours() {
+        hoursColumn.innerHTML = '';
+        for (let hour = 0; hour < 24; hour++) {
+            for (let half = 0; half < 2; half++) {
+                const hourDiv = document.createElement('div');
+                hourDiv.className = 'py-2 border-b border-gray-300 h-12 flex items-center justify-center';
+                hourDiv.textContent = `${hour}:${half === 0 ? '00' : '30'}`;
+                hoursColumn.appendChild(hourDiv);
+            }
+        }
+    }
+
+    // Renderiza la vista semanal con horas
+    function renderWeek(date) {
+        weekGrid.innerHTML = ''; // Limpia la semana anterior
+        const startOfWeek = getMonday(new Date(date));
+        const endOfWeek = new Date(startOfWeek);
+        endOfWeek.setDate(endOfWeek.getDate() + 6);
+
+        // Actualiza los encabezados de los días
+        for (let i = 0; i < 7; i++) {
+            const dayHeader = document.getElementById(`day-header-${i}`);
+            const day = new Date(startOfWeek);
+            day.setDate(startOfWeek.getDate() + i);
+            dayHeader.textContent = `${day.toLocaleDateString('es-ES', { weekday: 'long' })} ${day.getDate()}/${day.getMonth() + 1}`;
+            dayHeader.className = `font-bold py-2 text-center ${isToday(day) ? 'bg-blue-200' : 'bg-gray-100'}`;
+        }
+
+        // Genera las 24 horas para cada día
+        for (let hour = 0; hour < 24; hour++) {
+            for (let half = 0; half < 2; half++) {
+                for (let day = 0; day < 7; day++) {
+                    const timeSlot = document.createElement('div');
+                    timeSlot.className = 'border p-2 h-12 bg-gray-50 hover:bg-gray-100 relative time-slot';
+                    timeSlot.dataset.day = day;
+                    timeSlot.dataset.hour = hour;
+                    timeSlot.dataset.half = half;
+                    timeSlot.textContent = ''; // Inicialmente vacío
+
+                    // Contenedor para auditorias
+                    const appointmentContainer = document.createElement('div');
+                    appointmentContainer.className = 'absolute inset-0 p-1';
+                    timeSlot.appendChild(appointmentContainer);
+
+                    weekGrid.appendChild(timeSlot);
+                }
+            }
+        }
+
+        // Mostrar auditorias en el calendario
+        auditorias.forEach(auditoria => {
+            const auditoriaStartDate = new Date(auditoria.f016_fecha_inicio);
+            const auditoriaEndDate = new Date(auditoria.f016_fecha_finalizacion);
+
+            // Verificar si la auditoria está dentro de la semana actual
+            if (auditoriaStartDate >= startOfWeek && auditoriaStartDate <= endOfWeek) {
+                const dayIndex = (auditoriaStartDate.getDay() + 6) % 7; // Ajustar para que Lunes sea 0
+                const startHour = auditoriaStartDate.getHours();
+                const startHalf = auditoriaStartDate.getMinutes() >= 30 ? 1 : 0;
+                const endHour = auditoriaEndDate.getHours();
+                const endHalf = auditoriaEndDate.getMinutes() >= 30 ? 1 : 0;
+
+                const startSlotIndex = startHour * 2 + startHalf;
+                const endSlotIndex = endHour * 2 + endHalf;
+                const totalSlots = endSlotIndex - startSlotIndex;
+
+
+                if (totalSlots > 0) {
+                    const auditoriasContainer = weekGrid.querySelector(`[data-day="${dayIndex}"] .absolute`);
+
+                    const auditoriaDiv = document.createElement('div');
+                        auditoriaDiv.className = 'auditoria bg-orange-500 text-white p-1 rounded cursor-pointer';
+                    auditoriaDiv.dataset.id = auditoria.f016_rowid;
+                    auditoriaDiv.textContent = `${auditoria.mecanicoNombre} ${auditoria.mecanicoApellido} - ${auditoria.f016_descripcion} - ${auditoria.empresaNombre}`;
+
+                    // Calculate the top position based on start time
+                    const topPosition = (startSlotIndex * 48); // 48px per slot
+
+                    // Set style
+                    auditoriaDiv.style.position = 'absolute';
+                    auditoriaDiv.style.top = `${topPosition}px`;
+                    auditoriaDiv.style.height = `${48 * totalSlots - 4}px`; // 4px for margins
+                    auditoriaDiv.style.left = '5px';
+                    auditoriaDiv.style.right = '5px';
+
+                    auditoriaDiv.style.pointerEvents = 'auto'; // Enable interaction
+
+                    // Add click event to show details
+                    auditoriaDiv.addEventListener('click', () => {
+                        showAuditoriaDetails(auditoria);
+                    });
+
+                    auditoriasContainer.appendChild(auditoriaDiv);
+                }
+            }
+        });
+
+        // Actualiza el título de la semana
+        currentWeekLabel.textContent = `${formatDate(startOfWeek)} - ${formatDate(endOfWeek)}`;
+    }
+
+    function getMonday(date) {
+        const day = date.getDay();
+        const diff = date.getDate() - day + (day === 0 ? -6 : 1);
+        return new Date(date.setDate(diff));
+    }
+
+    function formatDate(date) {
+        return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+    }
+
+    function isToday(date) {
+        const today = new Date();
+        return date.getDate() === today.getDate() &&
+               date.getMonth() === today.getMonth() &&
+               date.getFullYear() === today.getFullYear();
+    }
+
+    // Navegación entre semanas
+    prevWeekBtn.addEventListener('click', () => {
+        currentDate.setDate(currentDate.getDate() - 7);
+        renderWeek(currentDate);
+    });
+
+    nextWeekBtn.addEventListener('click', () => {
+        currentDate.setDate(currentDate.getDate() + 7);
+        renderWeek(currentDate);
+    });
+
+    // Render inicial
+    renderHours();
+    renderWeek(currentDate);
+
+    // Mostrar modal para crear nueva auditoria
+    function showCreateAuditoriaModal(day, hour, half) {
+        const newAuditoriaHora = document.getElementById('newAuditoriaHora');
+        const startDateTimeInput = document.getElementById('startDateTime');
+        const selectedDate = new Date(currentDate);
+        const startOfWeek = getMonday(currentDate);
+        selectedDate.setDate(startOfWeek.getDate() + day);
+        selectedDate.setHours(hour);
+        selectedDate.setMinutes(half * 30);
+        selectedDate.setSeconds(0);
+        selectedDate.setMilliseconds(0);
+
+        // Adjust for timezone offset
+        const timezoneOffset = selectedDate.getTimezoneOffset() * 60000;
+        const adjustedDate = new Date(selectedDate.getTime() - timezoneOffset);
+        newAuditoriaHora.value = adjustedDate.toISOString().slice(0, 19);
+        startDateTimeInput.value = adjustedDate.toISOString().slice(0, 19);
+
+        document.getElementById('createAuditoriaModal').classList.remove('hidden');
+    }
+
+    // Manejar el clic en un espacio vacío para crear una auditoria
+    weekGrid.addEventListener('click', (event) => {
+        const timeSlot = event.target.closest('.time-slot');
+        if (timeSlot && !timeSlot.querySelector('.auditoria')) {
+            const day = parseInt(timeSlot.dataset.day);
+            const hour = parseInt(timeSlot.dataset.hour);
+            const half = parseInt(timeSlot.dataset.half);
+            showCreateAuditoriaModal(day, hour, half);
+        }
+    });
+
+    // Mostrar detalles de la auditoria en un modal
+    function showAuditoriaDetails(auditoria) {
+        const auditoriaDetailsContent = document.getElementById('auditoriaDetailsContent');
+        auditoriaDetailsContent.innerHTML = `
+            <p><strong>Fecha/Hora Inicio:</strong> ${new Date(auditoria.f016_fecha_inicio).toLocaleString()}</p>
+            <p><strong>Fecha/Hora Final:</strong> ${new Date(auditoria.f016_fecha_finalizacion).toLocaleString()}</p>
+            <p><strong>Descripción:</strong> ${auditoria.f016_descripcion}</p>
+            <p><strong>Mecánico:</strong> ${auditoria.mecanicoNombre} ${auditoria.mecanicoApellido}</p>
+            <p><strong>Empresa:</strong> ${auditoria.empresaNombre}</p>
+        `;
+        openAuditoriaDetailsModal();
+    }
+});
+</script>
+
+<style>
+    /* Estilo personalizado para la barra de desplazamiento */
+    .overflow-y-auto::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .overflow-y-auto::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+
+    .overflow-y-auto::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+
+    .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /* Estilos para los botones de filtro */
+    [data-filter] {
+        transition: all 0.3s ease;
+    }
+
+    [data-filter]:hover {
+        transform: translateY(-1px);
+    }
+
+    /* Estilos para el select de filtro */
+    select#filtro-estados {
+        min-width: 150px;
+        transition: all 0.2s ease;
+    }
+
+    select#filtro-estados:hover {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Modal Content Adjustments */
+    #createAuditoriaModal .rounded {
+        /* Ensure modal content is properly styled */
+    }
+
+    /* Auditoria Styling */
+    .auditoria {
+        /* Adjusted for absolute positioning within the day column */
+        background-color: #ea580c; /* Tailwind blue-500 */
+        color: white;
+        padding: 4px;
+        border-radius: 4px;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 10; /* Ensure auditorias appear above other elements */
+    }
+
+    /* Container for auditorias is set as absolute to enable positioning */
+    .absolute {
+        position: absolute; /* Ensure absolute positioning */
+  /*       top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; */
+    }
+
+    /* Ensure day columns are relative to position auditorias absolutely within them */
+    .col-span-7 > .relative {
+        position: relative;
+    }
+
+    /* Optional: Add transitions for smoother rendering */
+    .auditoria {
+        transition: all 0.3s ease;
+    }
+
+    /* Styles for clickable free slots */
+    .time-slot {
+        cursor: pointer;
+    }
+
+    .time-slot:hover {
+        background-color: rgba(59, 130, 246, 0.2); /* Tailwind blue-500 with opacity */
+    }
+
+    /* Ensure day headers stay on top */
+    .sticky.top-12 {
+        z-index: 20; /* Higher than auditorias */
+    }
+
+    /* Ajustar z-index del calendario */
+    .week-grid {
+        z-index: 1;
+    }
+    
+    /* Ajustar z-index de las auditorias */
+    .auditoria {
+        z-index: 2;
+    }
+    
+    /* Asegurar que el modal de auditoría esté por encima del calendario pero debajo de los dropdowns */
+    #auditoriaDetailsModal,
+    #createAuditoriaModal {
+        z-index: 1040;
+    }
+
+    /* Los encabezados del calendario deben estar por encima de las auditorias pero debajo de los dropdowns */
+    .sticky.top-12 {
+        z-index: 3;
+    }
+
+    /* Asegurar que los controles de navegación estén por encima de las auditorias */
+    .bg-white.z-10 {
+        z-index: 3;
+    }
+</style>
+
+

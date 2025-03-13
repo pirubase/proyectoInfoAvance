@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mecanico_plus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8ecf71a5c76a305faec3992e182e9958e7ade6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+478769dcf63cf56b50fa822eb0a52087f2b98e5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("mecanico_plus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mecanico_plus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

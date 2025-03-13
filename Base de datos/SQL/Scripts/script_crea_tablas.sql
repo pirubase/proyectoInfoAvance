@@ -173,6 +173,17 @@ f014_rowid_empresa_o_persona_natural int8 not null
 );
 
 
+create table t016_auditoria_mecanico (
+
+f016_rowid int8 not null primary key GENERATED ALWAYS AS identity(START WITH 1 INCREMENT BY 1),
+f016_ts timestamp not null,
+f016_fecha_inicio timestamp not null,
+f016_fecha_finalizacion timestamp not null,
+f016_descripcion varchar(255)  null,
+f016_rowid_mecanico int8 not null,
+f016_rowid_empresa_o_persona_natural int8 not null
+
+);
 
 
 --*********************************************************
@@ -342,6 +353,14 @@ references t002_empresa_o_persona_natural (f002_rowid);
 
 
 
+--t016 t002
+alter table t016_auditoria_mecanico  add  constraint fk_t016_t002 
+foreign key(f016_rowid_empresa_o_persona_natural)
+references t002_empresa_o_persona_natural (f002_rowid);
 
+--t016 t006
+alter table t016_auditoria_mecanico  add  constraint fk_t016_t006 
+foreign key(f016_rowid_mecanico)
+references t006_mecanico (f006_rowid);
 
 

@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\calendariomecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\calendariomecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\data\\local.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:data\\local.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\calendario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\calendario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\data\\t001_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,10 +151,6 @@
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\backend\\accesodatos\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\data\\local.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:data\\local.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\backend\\logicanegocio\\logindomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\backend\\logicanegocio\\logindomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -159,31 +171,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Principal\\Especialidad\\Create.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
-              "RelativeToolTip": "Pages\\Principal\\Especialidad\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T23:42:42.224Z",
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAArwDIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T00:07:13.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\package.json",
-              "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\package.json",
-              "RelativeToolTip": "package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T21:22:51.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
@@ -195,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
@@ -207,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
@@ -219,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "t001_usuario.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\t001_usuario.cs",
               "RelativeDocumentMoniker": "Data\\t001_usuario.cs",
@@ -231,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -243,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ValidationScriptsPartial.cshtml",
@@ -255,19 +255,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Principal\\_Layout.cshtml",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAswK8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAANIAAAAAAAAAAAAswNAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:11:37.489Z"
+              "WhenOpened": "2025-03-05T21:11:37.489Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "local.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\local.cs",
+              "RelativeDocumentMoniker": "Data\\local.cs",
+              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\local.cs",
+              "RelativeToolTip": "Data\\local.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwB8AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:54:42.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-05T21:22:51.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Principal\\Especialidad\\Create.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Principal\\Especialidad\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T23:42:42.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-06T00:37:01.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Principal\\Calendario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Principal\\Calendario\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T23:53:38.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "LogoutController.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\LogoutController.cs",
               "RelativeDocumentMoniker": "APIs\\LogoutController.cs",
@@ -279,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "TokenGenerator.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\TokenGenerator.cs",
               "RelativeDocumentMoniker": "APIs\\TokenGenerator.cs",
@@ -291,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\wwwroot\\css\\styles.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
@@ -303,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Create.cshtml",
@@ -315,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Index.cshtml.cs",
@@ -327,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -339,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "APIgenerica.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\APIgenerica.cs",
               "RelativeDocumentMoniker": "APIs\\APIgenerica.cs",
@@ -351,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Index.cshtml",
@@ -363,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Create.cshtml.cs",
@@ -375,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Usuario\\Index.cshtml.cs",
@@ -387,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Servicio\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Servicio\\Index.cshtml.cs",
@@ -399,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Permisos\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Permisos\\Index.cshtml.cs",
@@ -411,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Perfil\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Perfil\\Index.cshtml.cs",
@@ -423,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Mecanico\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Mecanico\\Index.cshtml.cs",
@@ -435,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Especialidad\\Index.cshtml.cs",
@@ -447,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Index.cshtml.cs",
@@ -459,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Finalizar.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
@@ -471,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Edit.cshtml.cs",
@@ -483,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Delete.cshtml.cs",
@@ -495,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Create.cshtml.cs",
@@ -507,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Calendario\\Index.cshtml.cs",
@@ -519,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Base\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Base\\Index.cshtml.cs",
@@ -531,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "LoginDomain.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
               "RelativeDocumentMoniker": "Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
@@ -543,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "PermisosDAO.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
               "RelativeDocumentMoniker": "Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
@@ -555,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "LoginDAO.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\LoginDAO.cs",
               "RelativeDocumentMoniker": "Pages\\Backend\\accesoDatos\\LoginDAO.cs",
@@ -567,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "t013_documento.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\t013_documento.cs",
               "RelativeDocumentMoniker": "Data\\t013_documento.cs",
@@ -576,18 +638,6 @@
               "ViewState": "AgIAABkAAAAAAAAAAAAuwCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T20:55:35.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "local.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\local.cs",
-              "RelativeDocumentMoniker": "Data\\local.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\local.cs",
-              "RelativeToolTip": "Data\\local.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA+wBYAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:54:42.773Z"
             }
           ]
         }
