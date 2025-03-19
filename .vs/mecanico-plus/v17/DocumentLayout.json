@@ -1,170 +1,178 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\",
+  "WorkspaceRootPath": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\base de datos\\sql\\scripts\\script_insert_datos_transversales.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:base de datos\\sql\\scripts\\script_insert_datos_transversales.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\calendariomecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\calendariomecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\data\\local.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:data\\local.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\calendario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\calendario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\data\\t001_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:data\\t001_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\apis\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:apis\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\apis\\apigenerica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:apis\\apigenerica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\apis\\logoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:apis\\logoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cliente\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cliente\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cita\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\usuario\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\usuario\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cita\\finalizar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\finalizar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\servicio\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\servicio\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\permisos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\permisos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\perfil\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\perfil\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\mecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\mecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\especialidad\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\especialidad\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cliente\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cliente\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cita\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cita\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\cita\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\calendario\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\calendario\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\principal\\base\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\base\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\backend\\accesodatos\\permisosdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\backend\\accesodatos\\permisosdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\backend\\accesodatos\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\backend\\accesodatos\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\backend\\accesodatos\\logindao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\pages\\backend\\logicanegocio\\logindomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\data\\t001_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:data\\t001_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\backend\\logicanegocio\\logindomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\backend\\logicanegocio\\logindomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\data\\t013_documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:data\\t013_documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\sebas\\documents\\proyectoinfoavance\\base de datos\\sql\\scripts\\script_insert_datos_transversales.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:base de datos\\sql\\scripts\\script_insert_datos_transversales.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\login\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\login\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\base de datos\\sql\\scripts\\script_insert_datos_transversales.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:base de datos\\sql\\scripts\\script_insert_datos_transversales.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\calendariomecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\calendariomecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\data\\local.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:data\\local.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\calendario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\calendario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\especialidad\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\apis\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:apis\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\apis\\apigenerica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:apis\\apigenerica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\apis\\logoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:apis\\logoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cliente\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cliente\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cita\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\usuario\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\usuario\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cita\\finalizar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\finalizar.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\servicio\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\servicio\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\permisos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\permisos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\perfil\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\perfil\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\mecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\mecanico\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\especialidad\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\especialidad\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cliente\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cliente\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cita\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cita\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\cita\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\cita\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\calendario\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\calendario\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\base\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\base\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\backend\\accesodatos\\permisosdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\backend\\accesodatos\\permisosdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\data\\t013_documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:data\\t013_documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -174,63 +182,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Login\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Login\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Login\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Login\\Index.cshtml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwEEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T00:36:10.781Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-06T00:37:01.401Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Principal\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Principal\\_Layout.cshtml",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAAMUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-19T21:52:28.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Pages\\Principal\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml.css",
+              "RelativeToolTip": "Pages\\Principal\\_Layout.cshtml.css",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-19T21:52:23.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:20:52.552Z"
+              "WhenOpened": "2025-03-05T21:20:52.552Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:20:47.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "t001_usuario.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\t001_usuario.cs",
-              "RelativeDocumentMoniker": "Data\\t001_usuario.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\t001_usuario.cs",
-              "RelativeToolTip": "Data\\t001_usuario.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAArwEsAAAACAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "LoginDomain.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
+              "RelativeDocumentMoniker": "Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
+              "RelativeToolTip": "Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:55:21.084Z"
+              "WhenOpened": "2025-03-05T20:58:35.755Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-05T21:23:29.109Z"
+              "DocumentIndex": 3,
+              "Title": "t001_usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Data\\t001_usuario.cs",
+              "RelativeDocumentMoniker": "Data\\t001_usuario.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Data\\t001_usuario.cs",
+              "RelativeToolTip": "Data\\t001_usuario.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAIAywEsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:55:21.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 2,
+              "Title": "LoginDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\LoginDAO.cs",
+              "RelativeDocumentMoniker": "Pages\\Backend\\accesoDatos\\LoginDAO.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\LoginDAO.cs",
+              "RelativeToolTip": "Pages\\Backend\\accesoDatos\\LoginDAO.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAMwDEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:58:19.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Login\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-13T00:36:06.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\_ValidationScriptsPartial.cshtml",
               "RelativeToolTip": "Pages\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -238,37 +317,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Principal\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
-              "RelativeToolTip": "Pages\\Principal\\_Layout.cshtml",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAswLwAAAApAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-05T21:23:29.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:11:37.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:20:47.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-06T00:37:01.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -276,49 +353,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\CalendarioMecanico\\Index.cshtml.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAvwDIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T00:07:13.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T00:07:13.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "script_insert_datos_transversales.sql ",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Base de datos\\SQL\\Scripts\\script_insert_datos_transversales.sql",
+              "DocumentIndex": 9,
+              "Title": "script_insert_datos_transversales.sql",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Base de datos\\SQL\\Scripts\\script_insert_datos_transversales.sql",
               "RelativeDocumentMoniker": "Base de datos\\SQL\\Scripts\\script_insert_datos_transversales.sql",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Base de datos\\SQL\\Scripts\\script_insert_datos_transversales.sql",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Base de datos\\SQL\\Scripts\\script_insert_datos_transversales.sql",
               "RelativeToolTip": "Base de datos\\SQL\\Scripts\\script_insert_datos_transversales.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-13T00:07:58.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T00:07:58.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "local.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\local.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Data\\local.cs",
               "RelativeDocumentMoniker": "Data\\local.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\local.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Data\\local.cs",
               "RelativeToolTip": "Data\\local.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAQwB8AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:54:42.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:54:42.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\package.json",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\package.json",
               "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\package.json",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\package.json",
               "RelativeToolTip": "package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -326,11 +400,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Especialidad\\Create.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Create.cshtml",
               "RelativeToolTip": "Pages\\Principal\\Especialidad\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -338,11 +412,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Calendario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml",
               "RelativeToolTip": "Pages\\Principal\\Calendario\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -350,11 +424,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "LogoutController.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\LogoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\APIs\\LogoutController.cs",
               "RelativeDocumentMoniker": "APIs\\LogoutController.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\LogoutController.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\APIs\\LogoutController.cs",
               "RelativeToolTip": "APIs\\LogoutController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -362,11 +436,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "TokenGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\TokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\APIs\\TokenGenerator.cs",
               "RelativeDocumentMoniker": "APIs\\TokenGenerator.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\TokenGenerator.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\APIs\\TokenGenerator.cs",
               "RelativeToolTip": "APIs\\TokenGenerator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -374,11 +448,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\wwwroot\\css\\styles.css",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\wwwroot\\css\\styles.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\wwwroot\\css\\styles.css",
               "RelativeToolTip": "wwwroot\\css\\styles.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -386,11 +460,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Create.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml",
               "RelativeToolTip": "Pages\\Principal\\Cliente\\Create.cshtml",
               "ViewState": "AgIAACMAAAAAAAAAAAAswDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -398,11 +472,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Cita\\Index.cshtml.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAuwCUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -410,11 +484,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Program.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAL8AAAAAAAAAAIBZwMwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -422,11 +496,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "APIgenerica.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\APIgenerica.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\APIs\\APIgenerica.cs",
               "RelativeDocumentMoniker": "APIs\\APIgenerica.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\APIs\\APIgenerica.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\APIs\\APIgenerica.cs",
               "RelativeToolTip": "APIs\\APIgenerica.cs",
               "ViewState": "AgIAAI0AAAAAAAAAAAAvwJgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -434,11 +508,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml",
               "RelativeToolTip": "Pages\\Principal\\Cliente\\Index.cshtml",
               "ViewState": "AgIAADkAAAAAAAAAAIBZwE4AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -446,11 +520,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Create.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Cliente\\Create.cshtml.cs",
               "ViewState": "AgIAABoAAAAAAAAAAIBZwDEAAABYAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -458,11 +532,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Usuario\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Usuario\\Index.cshtml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAuwCEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -470,11 +544,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Servicio\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Servicio\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Servicio\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Servicio\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Servicio\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Servicio\\Index.cshtml.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAuwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -482,11 +556,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Permisos\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Permisos\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Permisos\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Permisos\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Permisos\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Permisos\\Index.cshtml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAuwCEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -494,11 +568,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Perfil\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Perfil\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Perfil\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Perfil\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Perfil\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Perfil\\Index.cshtml.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAuwCMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -506,11 +580,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Mecanico\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Mecanico\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Mecanico\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Mecanico\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Mecanico\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Mecanico\\Index.cshtml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAuwB8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -518,11 +592,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Especialidad\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Especialidad\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Especialidad\\Index.cshtml.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAuwCQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -530,11 +604,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cliente\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cliente\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Cliente\\Index.cshtml.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAuwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -542,11 +616,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "Finalizar.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Cita\\Finalizar.cshtml.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAAAuwGQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -554,11 +628,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "Edit.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Edit.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Edit.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Cita\\Edit.cshtml.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAIBZwJ8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -566,11 +640,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Delete.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Cita\\Delete.cshtml.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAIBZwJAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -578,11 +652,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Cita\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Cita\\Create.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Cita\\Create.cshtml.cs",
               "ViewState": "AgIAAJoAAAAAAAAAAIBZwKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -590,11 +664,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Calendario\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Calendario\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Calendario\\Index.cshtml.cs",
               "ViewState": "AgIAAOIBAAAAAAAAAIBZwOkBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -602,11 +676,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Base\\Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Base\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Base\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Principal\\Base\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Base\\Index.cshtml.cs",
               "RelativeToolTip": "Pages\\Principal\\Base\\Index.cshtml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAuwBoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -614,23 +688,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "LoginDomain.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
-              "RelativeDocumentMoniker": "Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
-              "RelativeToolTip": "Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAvwCwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:58:35.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "PermisosDAO.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
               "RelativeDocumentMoniker": "Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
               "RelativeToolTip": "Pages\\Backend\\accesoDatos\\PermisosDAO.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAvwD8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -638,23 +700,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "LoginDAO.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\LoginDAO.cs",
-              "RelativeDocumentMoniker": "Pages\\Backend\\accesoDatos\\LoginDAO.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Pages\\Backend\\accesoDatos\\LoginDAO.cs",
-              "RelativeToolTip": "Pages\\Backend\\accesoDatos\\LoginDAO.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAvwDAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:58:19.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "t013_documento.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\t013_documento.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Data\\t013_documento.cs",
               "RelativeDocumentMoniker": "Data\\t013_documento.cs",
-              "ToolTip": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\Data\\t013_documento.cs",
+              "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Data\\t013_documento.cs",
               "RelativeToolTip": "Data\\t013_documento.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAuwCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -64,7 +64,7 @@ namespace mecanico_plus.Pages.Login
             port = puerto;
             database = "postgres";
             user = "postgres";
-            password = clave;
+            password = "postgres";
             pooling = "true";
             searchPath = "mecanico_plus"; // Schema
 
