@@ -195,8 +195,7 @@
               "ViewState": "AgIAADoAAAAAAAAAAAAcwEEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T00:36:10.781Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -209,8 +208,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-06T00:37:01.401Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -220,7 +218,7 @@
               "RelativeDocumentMoniker": "Pages\\Principal\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Principal\\_Layout.cshtml",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAAAM0AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAAMsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-19T21:52:28.884Z",
               "EditorCaption": ""
@@ -235,8 +233,7 @@
               "RelativeToolTip": "Pages\\Principal\\_Layout.cshtml.css",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-19T21:52:23.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T21:52:23.824Z"
             },
             {
               "$type": "Document",
@@ -248,8 +245,7 @@
               "RelativeToolTip": "Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-05T21:20:52.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:20:52.552Z"
             },
             {
               "$type": "Document",
@@ -261,8 +257,7 @@
               "RelativeToolTip": "Pages\\Backend\\logicaNegocio\\LoginDomain.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:58:35.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:58:35.755Z"
             },
             {
               "$type": "Document",
@@ -274,8 +269,7 @@
               "RelativeToolTip": "Data\\t001_usuario.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAIAywEsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:55:21.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:55:21.084Z"
             },
             {
               "$type": "Document",
@@ -287,8 +281,7 @@
               "RelativeToolTip": "Pages\\Backend\\accesoDatos\\LoginDAO.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAMwDEAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T20:58:19.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T20:58:19.127Z"
             },
             {
               "$type": "Document",
@@ -300,8 +293,7 @@
               "RelativeToolTip": "Pages\\Login\\Index.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T00:36:06.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T00:36:06.232Z"
             },
             {
               "$type": "Document",
