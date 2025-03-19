@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\permisos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\permisos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|solutionrelative:pages\\principal\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAB1E4CB-06BD-4110-A627-8904EBC306D1}|mecanico_plus.csproj|c:\\users\\felipe b\\desktop\\pi2 repo\\proyectoinfoavance\\pages\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -194,7 +194,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -224,20 +224,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Usuario\\Index.cshtml",
               "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml",
               "RelativeToolTip": "Pages\\Principal\\Usuario\\Index.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAUwEkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-19T23:16:26.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Permisos\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Permisos\\Create.cshtml.cs",
@@ -245,12 +245,11 @@
               "RelativeToolTip": "Pages\\Principal\\Permisos\\Create.cshtml.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T23:13:59.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T23:13:59.24Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Permisos\\Create.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\Permisos\\Create.cshtml",
@@ -258,18 +257,17 @@
               "RelativeToolTip": "Pages\\Principal\\Permisos\\Create.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-19T23:13:23.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T23:13:23.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Principal\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Principal\\_Layout.cshtml",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAAAMsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAAAP4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-19T21:52:28.884Z",
               "EditorCaption": ""
@@ -312,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Felipe B\\Desktop\\PI2 REPO\\proyectoInfoAvance\\Pages\\Principal\\Usuario\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Principal\\Usuario\\Index.cshtml.cs",
@@ -320,8 +318,7 @@
               "RelativeToolTip": "Pages\\Principal\\Usuario\\Index.cshtml.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAuwCEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:07:56.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T21:07:56.193Z"
             },
             {
               "$type": "Document",
