@@ -66,7 +66,7 @@ namespace mecanico_plus.Pages.Principal.Cliente
                 {
                     Estado = c.f009_estado,
                     FechaInicio = c.f009_fecha_inicio,
-                    FechaEstimadaFinalizacion = c.f009_fecha_finalizacion,
+                    FechaEstimadaFinalizacion = c.f009_fecha_inicio.AddDays(3), // Set FechaEstimadaFinalizacion to 3 days after FechaInicio
                     Descripcion = c.f009_descripcion,
                     Servicio = c.vObjServicio.f014_nombre,
                     Mecanico = $"{c.vObjMecanico.f006_nombre} {c.vObjMecanico.f006_apellido}"
@@ -85,7 +85,7 @@ namespace mecanico_plus.Pages.Principal.Cliente
         {
             public string Estado { get; set; }
             public DateTime FechaInicio { get; set; }
-            public DateTime? FechaEstimadaFinalizacion { get; set; }
+            public DateTime FechaEstimadaFinalizacion { get; set; } // Remove nullable type
             public string Descripcion { get; set; }
             public string Servicio { get; set; }
             public string Mecanico { get; set; }

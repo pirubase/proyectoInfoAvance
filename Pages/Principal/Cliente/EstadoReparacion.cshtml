@@ -38,7 +38,7 @@
                     <h2 class="text-xl font-semibold mb-2">@reparacion.Servicio</h2>
                     <p><strong>Estado:</strong> <span class="inline-block px-2 py-1 rounded-full text-white @GetEstadoColor(reparacion.Estado)">@reparacion.Estado</span></p>
                     <p><strong>Fecha de Inicio:</strong> @reparacion.FechaInicio.ToString("dd/MM/yyyy")</p>
-                    <p><strong>Fecha Estimada de Finalización:</strong> @reparacion.FechaEstimadaFinalizacion?.ToString("dd/MM/yyyy") ?? "No disponible"</p>
+                    <p><strong>Fecha Estimada de Finalización:</strong> @reparacion.FechaEstimadaFinalizacion.ToString("dd/MM/yyyy")</p>
                     <p><strong>Descripción:</strong> @reparacion.Descripcion</p>
                     <p><strong>Mecánico:</strong> @reparacion.Mecanico</p>
                     @if (reparacion.Estado == "Finalizada")
