@@ -1,0 +1,283 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = mecanico_plus
+build_property.RootNamespace = mecanico_plus
+build_property.ProjectDir = c:\Users\sebas\Documents\proyectoInfoAvance\proyectoInfoAvance\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\sebas\Documents\proyectoInfoAvance\proyectoInfoAvance
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Base/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEJhc2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Base/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEJhc2VcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/CalendarioMecanico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENhbGVuZGFyaW9NZWNhbmljb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/CalendarioMecanico/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENhbGVuZGFyaW9NZWNhbmljb1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Calendario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENhbGVuZGFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Calendario/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENhbGVuZGFyaW9cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cita/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENpdGFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cita/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENpdGFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cita/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENpdGFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cita/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENpdGFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cita/Finalizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENpdGFcRmluYWxpemFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cita/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENpdGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cita/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENpdGFcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cliente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENsaWVudGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cliente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENsaWVudGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cliente/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENsaWVudGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cliente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENsaWVudGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cliente/EstadoReparacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENsaWVudGVcRXN0YWRvUmVwYXJhY2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENsaWVudGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cliente/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENsaWVudGVcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Especialidad/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzcGVjaWFsaWRhZFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Especialidad/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzcGVjaWFsaWRhZFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Especialidad/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzcGVjaWFsaWRhZFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Especialidad/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzcGVjaWFsaWRhZFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Especialidad/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzcGVjaWFsaWRhZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Especialidad/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzcGVjaWFsaWRhZFxfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Estadistica/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzdGFkaXN0aWNhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Estadistica/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzdGFkaXN0aWNhXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Mecanico/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXE1lY2FuaWNvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Mecanico/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXE1lY2FuaWNvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Mecanico/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXE1lY2FuaWNvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Mecanico/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXE1lY2FuaWNvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Mecanico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXE1lY2FuaWNvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Mecanico/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXE1lY2FuaWNvXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Perfil/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcmZpbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Perfil/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcmZpbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Perfil/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcmZpbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Perfil/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcmZpbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Perfil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcmZpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Perfil/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcmZpbFxfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Permisos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcm1pc29zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Permisos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcm1pc29zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Permisos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcm1pc29zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Permisos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcm1pc29zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Permisos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcm1pc29zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Permisos/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFBlcm1pc29zXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Servicio/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFNlcnZpY2lvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Servicio/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFNlcnZpY2lvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Servicio/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFNlcnZpY2lvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Servicio/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFNlcnZpY2lvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Servicio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFNlcnZpY2lvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Servicio/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFNlcnZpY2lvXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Usuario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFVzdWFyaW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Usuario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFVzdWFyaW9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Usuario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFVzdWFyaW9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Usuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFVzdWFyaW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFVzdWFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Usuario/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFVzdWFyaW9cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Shared/_AnonymousLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Bbm9ueW1vdXNMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-20x8z25iqk
