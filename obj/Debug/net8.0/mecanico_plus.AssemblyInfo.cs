@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mecanico_plus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7f9840d8535628c5e3c4967580a54d5d5ad8002")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a002e5d535999b850c90344bafcd9220f15f98af")]
 [assembly: System.Reflection.AssemblyProductAttribute("mecanico_plus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mecanico_plus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
