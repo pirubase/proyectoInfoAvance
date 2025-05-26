@@ -114,6 +114,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENsaWVudGVcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cotizacion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENvdGl6YWNpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Cotizacion/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXENvdGl6YWNpb25cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Especialidad/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzcGVjaWFsaWRhZFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -144,6 +152,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Estadistica/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEVzdGFkaXN0aWNhXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Facturacion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEZhY3R1cmFjaW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Facturacion/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXEZhY3R1cmFjaW9uXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/IA/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXElBXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/IA/_ChatPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXElBXF9DaGF0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/IA/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXElBXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Mecanico/Create.cshtml]
@@ -264,6 +292,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/Usuario/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXFVzdWFyaW9cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Principal/_LayoutPaciente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbmNpcGFsXF9MYXlvdXRQYWNpZW50ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/sebas/Documents/proyectoInfoAvance/proyectoInfoAvance/Pages/Shared/_AnonymousLayout.cshtml]

@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mecanico_plus Dashboard</title>
-   
+    <!-- Favicon -->
+    <link rel="icon" href="../FrameworkInterno/images/Codex-AI-white.ico" type="image/x-icon">
 
     <!-- jQuery -->
     <script src="~/FrameworkInterno/JQuery/jquery-3.6.0.min.js"></script>
@@ -117,7 +118,6 @@
         .dropdown-orange {
             background-color: #f97316; /* Orange background */
             color: white; /* White text */
-            
         }
         .dropdown-orange a {
             color: white; /* White text for links */
@@ -141,91 +141,65 @@
         .day-column {
             position: relative;
         }
-
     </style>
 </head>
 <body class="h-full bg-white">
-    @{
-        var suspensionMessage = Context.Session.GetString("SuspensionMessage");
-    }
-    @if (!string.IsNullOrEmpty(suspensionMessage))
-    {
-        <div class="fixed top-0 left-0 right-0 z-50 bg-yellow-100 border-b border-yellow-200">
-            <div class="container mx-auto px-4 py-3">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <svg class="h-5 w-5 text-yellow-700 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-9v4a1 1 0 11-2 0V9a1 1 0 112 0zm0-4a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"/>
-                        </svg>
-                        <p class="text-yellow-700 text-sm font-medium">
-                            @suspensionMessage
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="h-12"></div> <!-- Espaciador para compensar el banner fijo -->
-    }
-
     <div class="min-h-full">
         <nav class="bg-orange-500">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center">
                         <div class="shrink-0">
-                            
+                            <img class="h-8 w-8" src="~/FrameworkInterno/Imagenes/codex-ai.png" alt="Codex-AI Logo">
                         </div>
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
                                @*  <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Dashboard</a> *@
-                        @*         <a href="/Principal/Doctor" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Doctor</a>
-                                <a href="/Principal/Cita" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Cita</a>
-                                <a href="/Principal/Paciente" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Paciente</a> *@
+                                @* <a href="/Principal/Doctor" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Doctor</a>
+                                <a href="/Principal/Cita" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Cita</a> *@
+                                <a href="/Principal/Cliente/EstadoReparacion" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Estado reparacion</a>
                                 <a href="/Principal/Calendario" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Calendario de citas</a>
-                                <a href="/Principal/CalendarioMecanico" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Calendario mecanico</a>
-                                <a href="/Principal/Estadistica" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Estadisticas</a>
-                                <button id="medicinaButton" class="text-white hover:bg-orange-600 px-3 py-2 rounded-md text-sm font-medium">
+                               
+
+                                @* <button id="medicinaButton" class="text-white hover:bg-orange-600 px-3 py-2 rounded-md text-sm font-medium">
                                    Taller
                                 </button>
                                 <button id="reportsButton" class="text-white hover:bg-orange-600 px-3 py-2 rounded-md text-sm font-medium">
                                     Seguridad
-                                </button>
-                                <a href="/Principal/Facturacion" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Facturacion</a>
-                                <a href="/Principal/Cotizacion" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Cotizacion</a>
-                                 <a href="/Principal/IA" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Asistente</a>
+                                </button> *@
+                                @* <a href="/Principal/Estadistica" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Estadisticas</a>
+                                <a href="/Principal/Facturacion" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Facturación</a>
+                               <a href="/Principal/Cotizacion" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-orange-600">Cotizacion</a> *@
                             </div>
-                            <div class="relative">
+                            @* <div class="relative">
 
-                                <div id="reportsDropdown" class="hidden absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 dropdown-white bg-white shadow-lg rounded-md z-50">
+                                <div id="reportsDropdown" class="hidden absolute left-1/2 transform -translate-x-1/2 mt-2 w-48 dropdown-orange shadow-lg rounded-md z-50">
                                     <div class="relative group">
-                                        <button id="seguridadButton" class="block w-full text-left px-4 py-2 text-sm bg-white text-gray-700 hover:bg-white-600">Asignacion de acceso paso a paso</button>
-                                        <div id="seguridadDropdown" class="hidden absolute left-full top-0 ml-2 w-48 bg-white dropdown-white bg-white shadow-lg rounded-md">
-                                            <a href="/Principal/Perfil" class="block px-4 py-2 text-sm text-gray-700 bg-white hover:bg-white-600">Paso 1.Perfil</a>
-                                            <a href="/Principal/Permisos" class="block px-4 py-2 text-sm text-gray-700 bg-white hover:bg-white-600">Paso 2.Permisos</a>
-                                            <a href="/Principal/Usuario" class="block px-4 py-2 text-sm text-gray-700 bg-white hover:bg-white-600">Paso 3.Usuario</a>
-
-                                      
+                                        <button id="seguridadButton" class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-600">Seguridad</button>
+                                        <div id="seguridadDropdown" class="hidden absolute left-full top-0 ml-2 w-48 dropdown-orange shadow-lg rounded-md">
+                                            <a href="/Principal/Permisos" class="block px-4 py-2 text-sm hover:bg-orange-600">Permisos</a>
+                                            <a href="/Principal/Usuario" class="block px-4 py-2 text-sm hover:bg-orange-600">Usuario</a>
+                                            <a href="/Principal/Perfil" class="block px-4 py-2 text-sm hover:bg-orange-600">Perfil</a>
                                         </div>
                                     </div>
                                 </div>
                                 
-                            </div>
+                            </div> *@
 
-                            <div class="relative  ml-3">
-                                <div id="medicinaDropdown" class="hidden absolute left-0 mt-2 w-48 bg-white dropdown-white-900 shadow-lg rounded-md z-50" style="top: 100%; transform: translateX(-30%);">
+                            @* <div class="relative">
+                                <div id="medicinaDropdown" class="hidden absolute left-0 mt-2 w-48 dropdown-orange shadow-lg rounded-md z-50" style="top: 100%; transform: translateX(-30%);">
                                     <div class="relative group">
-                                        <a href="/Principal/Cliente/EstadoReparacion" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Estado de Reparación</a>
-                                        <a href="/Principal/Servicio" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Servicio</a>
-                                        <a href="/Principal/Especialidad" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Vehiculo</a>
-                                        <a href="/Principal/Mecanico" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Mecanico</a>
-                                        <a href="/Principal/Cliente" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Cliente</a>
-                                        <a href="/Principal/Cita" class="block px-4 py-2 text-sm text-gray-700 hover:bg-white-600">Citas</a>
-                                  
-                        
+                                        <a href="/Principal/Cliente/EstadoReparacion" class="block px-4 py-2 text-sm hover:bg-orange-600">Estado de Reparación</a>
+                                        <a href="/Principal/Inventario" class="block px-4 py-2 text-sm hover:bg-orange-600">Inventario</a>
+                                        <a href="/Principal/GestionInventario" class="block px-4 py-2 text-sm hover:bg-orange-600">Gestion inventario</a>
+                                        <a href="/Principal/Especialidad" class="block px-4 py-2 text-sm hover:bg-orange-600">Vehiculo</a>
+                                        <a href="/Principal/Mecanico" class="block px-4 py-2 text-sm hover:bg-orange-600">Mecanico</a>
+                                        <a href="/Principal/Cliente" class="block px-4 py-2 text-sm hover:bg-orange-600">Cliente</a>
+        
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> *@
                            
                         </div>
                     </div>
@@ -248,7 +222,7 @@
                                     </button>
                                 </div>
                                 <div id="user-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
-                                    @* <a href="#" class="block px-4 py-2 text-sm text-gray-700">Seguridad</a> *@
+                                   
                                    
                                     <form method="post" asp-page="/Login/Index" asp-page-handler="Logout" class="inline">
                                         <button type="submit" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
@@ -446,8 +420,6 @@
     <script src="~/FrameworkInterno/vendors/jspdf.umd.min.js"></script>
     <script src="~/FrameworkInterno/vendors/html2canvas.min.js"></script>
 
-    <!-- Site.js - Add this line -->
-    <script src="~/js/main.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>

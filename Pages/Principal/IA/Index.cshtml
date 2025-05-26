@@ -1,0 +1,121 @@
+@page
+@model mecanico_plus.Pages.Principal.IA.IndexModel
+@{
+    ViewData["Title"] = "Chat IA";
+}
+
+<div class="container mx-auto p-4 max-w-3xl">
+    <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+        <!-- Encabezado -->
+        <div class="bg-gradient-to-r from-orange-600 to-red-600 p-6">
+            <h1 class="text-2xl font-bold text-white">Asistente Virtual Mecánico+</h1>
+            <p class="text-sm text-orange-100 mt-1">Con inteligencia artificial especializada</p>
+        </div>
+
+        <!-- Área del Chat -->
+        <div class="chat-container h-[500px] overflow-y-auto p-4 bg-gray-50" id="chatContainer">
+            @foreach (var message in Model.ChatHistory)
+            {
+                <div class="flex mb-4 @(message.IsUser ? "justify-end" : "justify-start")">
+                    <div class="@(message.IsUser ? 
+                        "bg-orange-600 text-white" : "bg-white border border-gray-200") 
+                        p-3 rounded-2xl max-w-[85%] shadow-sm transition-all duration-200">
+                        <p class="text-sm @(message.IsUser ? "text-white" : "text-gray-700")">
+                            @message.Content
+                        </p>
+                        <span class="block text-xs mt-1 @(message.IsUser ? "text-orange-100" : "text-gray-500")">
+                            @(message.IsUser ? "Tú" : "Asistente") • 
+                            @DateTime.Now.ToString("HH:mm")
+                        </span>
+                    </div>
+                </div>
+            }
+            <!-- Spinner de carga -->
+            <div id="loadingSpinner" class="hidden justify-center mb-4">
+                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-orange-600"></div>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <form method="post" id="chatForm" 
+              class="bg-gray-50 p-4 border-t border-gray-100 flex gap-2 items-center">
+            <input asp-for="UserMessage" 
+                   class="flex-grow p-3 border rounded-xl focus:outline-none focus:ring-2 
+                          focus:ring-orange-500 focus:border-transparent"
+                   placeholder="Escribe tu pregunta sobre mecánica..." 
+                   id="messageInput" />
+            <button type="submit" 
+                    class="bg-orange-600 text-white px-6 py-3 rounded-xl hover:bg-orange-700 
+                           transition-colors flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                </svg>
+                Enviar
+            </button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Función para actualizar el chat dinámicamente
+        async function sendMessage(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            const chatContainer = document.getElementById('chatContainer');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const messageInput = document.getElementById('messageInput');
+
+            // Mostrar spinner
+            loadingSpinner.classList.remove('hidden');
+            
+            try {
+                // Enviar mensaje con Fetch API
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    }
+                });
+
+                if (!response.ok) throw new Error('Error en la respuesta');
+                
+                // Actualizar solo la parte necesaria
+                const result = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(result, 'text/html');
+                const newChat = doc.getElementById('chatContainer').innerHTML;
+                
+                chatContainer.innerHTML = newChat;
+                messageInput.value = '';
+                
+            } catch (error) {
+                console.error('Error:', error);
+                // Agregar mensaje de error al chat
+                chatContainer.innerHTML += `
+                    <div class="flex justify-start mb-4">
+                        <div class="bg-red-100 text-red-700 p-3 rounded-2xl max-w-[85%]">
+                            <p class="text-sm">Error: No se pudo obtener respuesta</p>
+                        </div>
+                    </div>
+                `;
+            } finally {
+                loadingSpinner.classList.add('hidden');
+                // Scroll automático
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+        }
+
+        // Asignar evento al formulario
+        document.getElementById('chatForm').addEventListener('submit', sendMessage);
+
+        // Scroll inicial
+        window.onload = () => {
+            document.getElementById('chatContainer').scrollTop = 
+                document.getElementById('chatContainer').scrollHeight;
+        };
+    </script>
+}

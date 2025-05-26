@@ -1,0 +1,18 @@
+@model mecanico_plus.Pages.Principal.IA.IndexModel
+
+@foreach (var message in Model.ChatHistory)
+{
+    <div class="flex mb-4 @(message.IsUser ? "justify-end" : "justify-start")">
+        <div class="@(message.IsUser ? 
+            "bg-blue-600 text-white" : "bg-white border border-gray-200") 
+            p-3 rounded-2xl max-w-[85%] shadow-sm transition-all duration-200">
+            <p class="text-sm @(message.IsUser ? "text-white" : "text-gray-700")">
+                @message.Content
+            </p>
+            <span class="block text-xs mt-1 @(message.IsUser ? "text-blue-100" : "text-gray-500")">
+                @(message.IsUser ? "Tú" : "Asistente") • 
+                @DateTime.Now.ToString("HH:mm")
+            </span>
+        </div>
+    </div>
+}

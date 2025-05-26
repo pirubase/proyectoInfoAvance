@@ -1,0 +1,4 @@
+﻿@{
+    var userType = Context.Session.GetString("UserType");
+    Layout = userType == "Patient" ? "_LayoutPaciente" : "_Layout";
+}

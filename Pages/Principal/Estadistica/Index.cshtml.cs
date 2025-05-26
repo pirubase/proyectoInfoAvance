@@ -48,6 +48,11 @@ private readonly DbContextOptions<local> _contextOptions;
         public List<MecanicoHorasViewModel> MecanicosOrdenadosPorHoras { get; set; }
         public List<ProductividadViewModel> ReporteProductividad { get; set; }
         public FacturacionViewModel ReporteFacturacion { get; set; }
+        
+
+        public int TotalClientes { get; set; }
+public int ServiciosPendientes { get; set; }
+public double TiempoPromedioGlobal { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
         {
@@ -95,6 +100,20 @@ private readonly DbContextOptions<local> _contextOptions;
 
                 MecanicoConMasHoras = mecanicosHoras.FirstOrDefault();
                 MecanicosOrdenadosPorHoras = mecanicosHoras;
+
+                TotalClientes = await _context.t009_cita
+    .Where(c => c.f009_estado == "finalizada")
+    .Select(c => c.f009_rowid_cliente)
+    .Distinct()
+    .CountAsync();
+
+ServiciosPendientes = await _context.t009_cita
+    .Where(c => c.f009_estado != "finalizada")
+    .CountAsync();
+
+TiempoPromedioGlobal = await _context.t009_cita
+    .Where(c => c.f009_estado == "finalizada")
+    .AverageAsync(c => (c.f009_fecha_finalizacion - c.f009_fecha_inicio).TotalHours);
 
                 // Reporte de Productividad
                 ReporteProductividad = await _context.t009_cita

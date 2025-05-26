@@ -69,7 +69,7 @@ private readonly DbContextOptions<local> _contextOptions;
         // Load existing auditorias (optional, to display them in the calendar)
             Auditorias = await _context.t016_auditoria_mecanico
                 .Include(a => a.vObjMecanico)
-                .Include(a => a.vObjEmpresa).Where(t => t.f016_rowid_empresa_o_persona_natural == currentEmpresaId)
+                .Include(a => a.vObjEmpresa)
                 .ToListAsync();
 
             // Load mechanics and companies

@@ -20,7 +20,7 @@ namespace mecanico_plus.Data
         
         [Display(Name = "Descripción")]
         [StringLength(150)]
-        public string f016_descripcion { get; set; }
+        public string? f016_descripcion { get; set; }
         
         [Display(Name = "ID del Mecánico")]
         public int f016_rowid_mecanico { get; set; }

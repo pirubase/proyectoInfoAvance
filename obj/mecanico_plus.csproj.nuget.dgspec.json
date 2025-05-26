@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\mecanico_plus.csproj": {}
+    "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\mecanico_plus.csproj": {}
   },
   "projects": {
-    "c:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\mecanico_plus.csproj": {
+    "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\mecanico_plus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\mecanico_plus.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\mecanico_plus.csproj",
         "projectName": "mecanico_plus",
-        "projectPath": "c:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\mecanico_plus.csproj",
+        "projectPath": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\mecanico_plus.csproj",
         "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\obj\\",
+        "outputPath": "C:\\Users\\sebas\\Documents\\proyectoInfoAvance\\proyectoInfoAvance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",

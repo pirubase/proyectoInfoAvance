@@ -128,7 +128,9 @@ builder.Services.AddMvc();
 builder.Services.AddDbContext<mecanico_plus.Data.local>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("connectionString")));
 
-
+// Registrar el servicio InteligenciaArtificial
+builder.Services.AddScoped<mecanico_plus.Services.InteligenciaArtificial>();
+builder.Services.AddScoped<mecanico_plus.Services.EstadisticasService>();
 
 // Opcional: Limites del servidor Kestrel
 builder.WebHost.ConfigureKestrel(serverOptions =>
@@ -173,36 +175,9 @@ app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Crear middleware personalizado para validación de suscripción
-app.Use(async (context, next) =>
-{
-    var path = context.Request.Path.ToString().ToLower();
-    if (path.StartsWith("/Principal")&& 
-        !path.Contains("/Principal/Usuario") && 
-        !path.Contains("/Principal/suscripcion"))
-    {
-        var email = context.Session.GetString("SessionUser");
-        if (!string.IsNullOrEmpty(email))
-        {
-            using (var scope = app.Services.CreateScope())
-            {
-                var dbContext = scope.ServiceProvider.GetRequiredService<mecanico_plus.Data.local>();
-                var user = await dbContext.t001_usuario
-                    .FirstOrDefaultAsync(u => u.f001_correo_electronico == email);
-
-               
-            }
-        }
-    }
-    await next();
-});
-
 // Mapear controladores y Razor Pages
 app.MapControllers();
 app.MapRazorPages();
-
-
-
 
 // Redirect "/" to "/Login/Index"
 app.MapGet("/", context =>

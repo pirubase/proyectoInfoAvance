@@ -1,0 +1,103 @@
+@page
+@model mecanico_plus.Pages.Principal.Facturacion.IndexModel
+@{
+    ViewData["Title"] = "Facturación";
+}
+
+<div class="bg-white rounded-lg shadow p-6">
+    <h1 class="text-2xl font-bold mb-4">Generar Factura</h1>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <form method="post" asp-page-handler="GenerateInvoice" class="space-y-6">
+        <div>
+            <label for="citaId" class="block text-sm font-medium text-gray-900">Seleccionar Cita</label>
+            <div class="mt-2">
+                <select id="citaId" name="citaId" class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" onchange="updateTotalCost()">
+                    <option value="">Seleccione una cita</option>
+                    @foreach (var cita in Model.Citas)
+                    {
+                        <option value="@cita.f009_rowid" data-cost="@cita.vObjServicio.f014_valor">Cita @cita.f009_hora.ToString("dd/MM/yyyy HH:mm") - @cita.vObjCliente.f007_nombre @cita.vObjCliente.f007_apellido</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="additionalCost" class="block text-sm font-medium text-gray-900">Costo Adicional (opcional)</label>
+            <div class="mt-2">
+                <input id="additionalCost" name="additionalCost" type="number" step="0.01" class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" oninput="updateTotalCost()">
+            </div>
+        </div>
+        <div>
+            <label for="additionalDetails" class="block text-sm font-medium text-gray-900">Detalles Adicionales (opcional)</label>
+            <div class="mt-2">
+                <textarea id="additionalDetails" name="additionalDetails" rows="4" class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+            </div>
+        </div>
+        <div>
+            <label for="paymentMethod" class="block text-sm font-medium text-gray-900">Método de Pago (opcional)</label>
+            <div class="mt-2">
+                <select id="paymentMethod" name="paymentMethod" class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <option value="">Seleccione un método de pago</option>
+                    @foreach (var metodo in mecanico_plus.Pages.Backend.ModeloConDatos.MedioDePago.RetornaOpciones())
+                    {
+                        <option value="@metodo.NombreMetodoDePago">@metodo.NombreMetodoDePago</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="totalCost" class="block text-sm font-medium text-gray-900">Total</label>
+            <div class="mt-2">
+                <input id="totalCost" name="totalCost" type="text" class="block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" readonly>
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="w-full bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Generar Factura</button>
+        </div>
+    </form>
+
+    @if (Model.SelectedCita != null)
+    {
+        <div class="mt-10 bg-gray-100 p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Factura</h2>
+            <p><strong>Cliente:</strong> @Model.SelectedCita.vObjCliente.f007_nombre @Model.SelectedCita.vObjCliente.f007_apellido</p>
+            <p><strong>Servicio:</strong> @Model.SelectedCita.vObjServicio.f014_nombre</p>
+            <p><strong>Fecha de Cita:</strong> @Model.SelectedCita.f009_hora.ToString("dd/MM/yyyy HH:mm")</p>
+            <p><strong>Fecha de Emisión:</strong> @Model.IssuanceDate.ToString("dd/MM/yyyy")</p>
+            <p><strong>Método de Pago:</strong> @Model.PaymentMethod</p>
+            <p><strong>Detalles Adicionales:</strong> @Model.AdditionalDetails</p>
+            <p><strong>Costo Adicional:</strong> @Model.AdditionalCost.ToString("C")</p>
+            <p><strong>Total:</strong> @Model.TotalCost.ToString("C")</p>
+            <div class="mt-4">
+                <button onclick="window.print()" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Imprimir Factura</button>
+                <button onclick="exportToPDF()" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Exportar a PDF</button>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    function updateTotalCost() {
+        const citaSelect = document.getElementById('citaId');
+        const additionalCostInput = document.getElementById('additionalCost');
+        const totalCostInput = document.getElementById('totalCost');
+
+        const selectedCitaOption = citaSelect.options[citaSelect.selectedIndex];
+        const citaCost = parseFloat(selectedCitaOption.getAttribute('data-cost')) || 0;
+        const additionalCost = parseFloat(additionalCostInput.value) || 0;
+
+        const totalCost = citaCost + additionalCost;
+        totalCostInput.value = totalCost.toFixed(2);
+    }
+
+    function exportToPDF() {
+        // Implement PDF export functionality here
+        alert("Exportar a PDF no está implementado.");
+    }
+</script>

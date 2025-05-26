@@ -12,7 +12,7 @@
 
     @if (HttpContext.Session.GetString("UserType") == "Cliente")
     {
-        <div class="mb-8">
+        @* <div class="mb-8">
             <button class="w-full bg-orange-50 p-4 rounded-lg border border-green-200 flex justify-between items-center" 
                     onclick="toggleSection('doctorFamilia')">
                 <h2 class="text-xl font-bold text-blue-800">Mecanico de Familia</h2>
@@ -50,7 +50,7 @@
                     </div>
                 }
             </div>
-        </div>
+        </div> *@
     }
     @if (HttpContext.Session.GetString("UserType") != "Cliente")
     {
